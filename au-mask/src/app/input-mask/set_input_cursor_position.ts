@@ -1,9 +1,11 @@
 
 
 export function setInputCursorPosition(input, position) {
-  if (position < 0) {
-    return;
+  if (input.setSelectionRange) {
+    //input.focus();
+    input.setSelectionRange(position, position);
   }
-  input.setSelectionRange(position, position);
 }
+
+
 

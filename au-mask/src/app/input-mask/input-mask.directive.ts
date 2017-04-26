@@ -34,8 +34,10 @@ export class InputMaskDirective implements OnChanges {
   }
 
 
-  @HostListener('focus')
-  onFocus() {
+  @HostListener('focus', ['$event'])
+  onFocus($event: KeyboardEvent) {
+
+    $event.preventDefault();
     setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
   }
 
