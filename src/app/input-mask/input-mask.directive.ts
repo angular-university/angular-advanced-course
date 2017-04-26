@@ -1,8 +1,11 @@
 import {Directive, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
 import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./cursor_handlers";
-import {findMaskDigitForPosition, initPlaceholderMask} from "./mask_placeholder";
+import {initHelperMask, initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
+
+
+export const never = () => false;
 
 
 @Directive({
@@ -13,20 +16,23 @@ export class InputMask implements OnChanges {
   @Input('au-mask')
   mask = '';
 
+  helperMask: string;
+
   input: HTMLInputElement;
 
-  constructor( el:ElementRef) {
+  constructor(el: ElementRef) {
     this.input = el.nativeElement;
   }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['mask']) {
-      this.input.value = initPlaceholderMask(this.mask);
+      this.input.value = initPlaceholder(this.mask);
+      this.helperMask = initHelperMask(this.mask);
     }
   }
 
 
-  @HostListener("keydown", ['$event','$event.key', '$event.keyCode'])
+  @HostListener("keydown", ['$event', '$event.key', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, key, keyCode) {
 
     $event.preventDefault();
@@ -38,12 +44,18 @@ export class InputMask implements OnChanges {
       return;
     }
 
-    const maskDigit = findMaskDigitForPosition(this.input.value, cursorPos, this.mask);
+    if (key.length > 1) {
+      return;
+    }
 
-    if (MASK_DIGIT_VALIDATORS[maskDigit](key)) {
+    const maskDigit = this.helperMask.charAt(cursorPos),
+          digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
+
+    if (digitValidator(key)) {
       applyCharToInput(this.input, cursorPos, key);
       handleRightArrow(this.input, cursorPos);
     }
+
   }
 
 

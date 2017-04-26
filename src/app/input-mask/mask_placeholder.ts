@@ -11,11 +11,15 @@ const SPECIAL_CHARS_REGEX = {
   }
 };
 
+
+
 export const SPECIAL_CHARACTERS = Object.keys(SPECIAL_CHARS_REGEX);
 
-export function initPlaceholderMask(input:string) {
 
-  const chars = input.split('');
+
+export function initPlaceholder(mask:string) {
+
+  const chars = mask.split('');
 
   const value = chars.reduce((result, char) =>  {
 
@@ -28,12 +32,20 @@ export function initPlaceholderMask(input:string) {
 
 
 
-export function findMaskDigitForPosition(currentInputValue:string, cursorPosInsideInput:number, mask:string) {
 
+export function initHelperMask(mask:string) {
 
+  const chars = mask.split('');
 
+  const value = chars.reduce((result, char) =>  {
 
-  return "9";
+    return result += SPECIAL_CHARS_REGEX[char] ? SPECIAL_CHARS_REGEX[char].replaceWith : char;
 
+  }, '');
 
+  return '  ' + value;
 }
+
+
+
+
