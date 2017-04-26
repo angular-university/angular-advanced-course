@@ -1,20 +1,7 @@
-const SPECIAL_CHARS_REGEX = {
-  ' ': {
-    replaceWith: '  '
-  },
-  '-': {
-    replaceWith: '-'
-  },
-  '/': {
-    replaceWith: '/'
-  },
-  '+': {
-    replaceWith: '+'
-  }
-};
 
+import * as includes from 'lodash.includes';
 
-export const SPECIAL_CHARACTERS = Object.keys(SPECIAL_CHARS_REGEX);
+export const SPECIAL_CHARACTERS = [" ", "/", "(", ")", "+", "\/", "-"];
 
 
 export function initPlaceholder(mask: string) {
@@ -23,26 +10,18 @@ export function initPlaceholder(mask: string) {
 
   const value = chars.reduce((result, char) => {
 
-    return result += SPECIAL_CHARS_REGEX[char] ? SPECIAL_CHARS_REGEX[char].replaceWith : '_';
+    if (char == ' ') {
+      return result += '  ';
+    }
+
+    return result += includes(SPECIAL_CHARACTERS, char) ? char : '_';
 
   }, '');
 
-  return '  ' + value;
+  return value;
 }
 
 
-export function initHelperMask(mask: string) {
-
-  const chars = mask.split('');
-
-  const value = chars.reduce((result, char) => {
-
-    return result += SPECIAL_CHARS_REGEX[char] ? SPECIAL_CHARS_REGEX[char].replaceWith : char;
-
-  }, '');
-
-  return '  ' + value;
-}
 
 
 

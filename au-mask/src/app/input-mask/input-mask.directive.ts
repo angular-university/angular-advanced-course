@@ -1,6 +1,6 @@
 import {Directive, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
 import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./key_handlers";
-import {initHelperMask, initPlaceholder} from "./mask_placeholder";
+import {initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
 import {findFirstNonSpecialCharPosition, never} from "./utils";
@@ -29,7 +29,7 @@ export class InputMaskDirective implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['mask']) {
       this.input.value = initPlaceholder(this.mask);
-      this.helperMask = initHelperMask(this.mask);
+      this.helperMask = this.mask.replace(/\s/g, '  ');
     }
   }
 
@@ -60,6 +60,10 @@ export class InputMaskDirective implements OnChanges {
 
     const maskDigit = this.helperMask.charAt(cursorPos),
           digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
+
+    console.log("helperMask", '>>' + this.helperMask + '<<');
+    console.log("maskDigit", maskDigit);
+    console.log("cursorPos", cursorPos);
 
     if (digitValidator(key)) {
       applyCharToInput(this.input, cursorPos, key);
