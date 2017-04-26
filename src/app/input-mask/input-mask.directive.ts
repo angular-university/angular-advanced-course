@@ -4,6 +4,8 @@ import {initHelperMask, initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
 import {never} from "./fp_utils";
+import {TAB} from "./key_codes";
+
 
 
 @Directive({
@@ -29,11 +31,20 @@ export class InputMask implements OnChanges {
     }
   }
 
+/*
+  @HostListener('focus')
+  onFocus() {
+    console.log('focus');
+    //setInputCursorPosition(this.input, 3);
+  }*/
+
 
   @HostListener("keydown", ['$event', '$event.key', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, key, keyCode) {
 
-    $event.preventDefault();
+    if (keyCode !== TAB) {
+      $event.preventDefault();
+    }
 
     const cursorPos = this.input.selectionStart;
 

@@ -4,6 +4,7 @@ import * as findLastIndex from 'lodash.findlastindex';
 import * as findIndex from 'lodash.findindex';
 import * as includes from 'lodash.includes';
 import {SPECIAL_CHARACTERS} from "./mask_placeholder";
+import {LEFT_ARROW, RIGHT_ARROW} from "./key_codes";
 
 export type KeyAction = (input: HTMLInputElement, position: number) => void;
 
@@ -33,7 +34,6 @@ export function handleLeftArrow(input, position) {
 
 
 
-const LEFT_ARROW =	37, RIGHT_ARROW = 39;
 
 export const ACTIONS_PER_KEY_CODE: {[key:number]: KeyAction} = {};
 

@@ -1,3 +1,4 @@
+
 const SPECIAL_CHARS_REGEX = {
   ' ': {
     replaceWith: '  '
