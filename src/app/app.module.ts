@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {InputMask} from "./input-mask/input-mask.directive";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputMask
   ],
   imports: [
     BrowserModule,
