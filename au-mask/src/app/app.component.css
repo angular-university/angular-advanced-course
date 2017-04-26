@@ -1,0 +1,25 @@
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+label {
+display: block;
+  margin-top: 30px;
+
+}
+
+input {
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 23px;
+  font-family: "Courier", serif;
+  width:410px;
+  margin-bottom: 30px;
+  border: 2px solid darkgray;
+  padding: 5px 0;
+}
+
+
