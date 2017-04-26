@@ -13,7 +13,7 @@ const SPECIAL_CHARS_REGEX = {
 
 
 
-export function applyMask(input:string) {
+export function initPlaceholderMask(input:string) {
 
   const chars = input.split('');
 

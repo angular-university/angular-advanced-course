@@ -1,21 +1,25 @@
 import {Directive, ElementRef, HostBinding, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
-import {applyMask} from "./apply_mask";
 import {handleLeftArrow} from "./key-handlers/handle_left_arrow";
 import {handleRightArrow} from "./key-handlers/handle_right_arrow";
 import {KeyAction} from "./key-handlers/key_action";
-import {handleNumeric} from "./key-handlers/handle_numeric";
+import {initPlaceholderMask} from "./init_placeholder_mask";
+import {applyCharToInput} from "./key-handlers/apply_char_to_input";
 
 
-const LEFT_ARROW =	37, UP_ARROW = 38, RIGHT_ARROW = 39, DOWN_ARROW = 40;
+const LEFT_ARROW =	37, RIGHT_ARROW = 39;
 
-const KEY_ACTIONS: {[key:number]: KeyAction} = {};
+const ACTIONS_PER_KEY_CODE: {[key:number]: KeyAction} = {};
 
-KEY_ACTIONS[RIGHT_ARROW] = handleRightArrow;
-KEY_ACTIONS[LEFT_ARROW] = handleLeftArrow;
+ACTIONS_PER_KEY_CODE[RIGHT_ARROW] = handleRightArrow;
+ACTIONS_PER_KEY_CODE[LEFT_ARROW] = handleLeftArrow;
 
-for (let i = 48; i <= 57; i++) {
-  KEY_ACTIONS[i] = handleNumeric;
-}
+
+const ACTIONS_PER_CHAR: {[key:string]: KeyAction} = {};
+
+
+
+
+
 
 
 
@@ -27,8 +31,6 @@ export class InputMask implements OnChanges {
   @Input('au-mask')
   mask = '';
 
-  currentValue = '';
-
   input: HTMLInputElement;
 
   constructor( el:ElementRef) {
@@ -37,15 +39,10 @@ export class InputMask implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['mask']) {
-      this.currentValue = applyMask(this.mask);
+      this.input.value = initPlaceholderMask(this.mask);
     }
-
   }
 
-  @HostBinding('value')
-  get value() {
-    return this.currentValue;
-  }
 
   @HostListener("keydown", ['$event','$event.key', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, key, keyCode) {
@@ -54,10 +51,20 @@ export class InputMask implements OnChanges {
 
     const cursorPos = this.input.selectionStart;
 
-    if (KEY_ACTIONS[keyCode]) {
-      KEY_ACTIONS[keyCode](this.input, cursorPos, this.mask, key, keyCode);
+    if (isCursorKey(keyCode)) {
+      ACTIONS_PER_KEY_CODE[keyCode](this.input, cursorPos, this.mask, key, keyCode);
+      return;
     }
+
+
+
+    applyCharToInput(this.input, cursorPos, key);
+    handleRightArrow(this.input, cursorPos);
 
   }
 
+
 }
+
+
+const isCursorKey = (keyCode) => keyCode === 37 || keyCode === 39;
