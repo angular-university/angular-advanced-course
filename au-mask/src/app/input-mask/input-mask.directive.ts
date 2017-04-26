@@ -40,8 +40,10 @@ export class InputMaskDirective implements OnChanges {
   }
 
 
-  @HostListener("keydown", ['$event', '$event.key', '$event.keyCode'])
-  onKeyDown($event: KeyboardEvent, key, keyCode) {
+  @HostListener("keydown", ['$event', '$event.keyCode'])
+  onKeyDown($event: KeyboardEvent, keyCode) {
+
+    const key = String.fromCharCode(keyCode);
 
     if (keyCode !== TAB) {
       $event.preventDefault();
