@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { MasksComponent } from './masks/masks.component';
-import {InputMaskDirectiveModule} from "au-mask";
+import {InputMaskDirectiveModule} from "angular-input-mask";
 
 const routes: Routes = [
   {
