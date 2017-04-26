@@ -42,14 +42,14 @@ export class InputMaskDirective implements OnChanges {
       return;
     }
 
-    // clear selection when typings starts
-    if (this.input.selectionEnd > this.input.selectionStart) {
-      setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
-    }
-
     // block all keyboard behaviour, all changes are now made via input.value
     if (keyCode !== TAB) {
       $event.preventDefault();
+    }
+
+    // clear selection when typing starts - cannot be done on focus due to cross-browser compatibility
+    if (this.input.selectionEnd > this.input.selectionStart) {
+      setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
     }
 
     const key = String.fromCharCode(keyCode);
