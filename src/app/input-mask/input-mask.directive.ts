@@ -6,9 +6,6 @@ import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
 import {never} from "./fp_utils";
 
 
-
-
-
 @Directive({
   selector: 'input[au-mask]'
 })
