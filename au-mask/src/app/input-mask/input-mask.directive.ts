@@ -33,27 +33,26 @@ export class InputMaskDirective implements OnChanges {
     }
   }
 
-  @HostListener('focus', ['$event'])
-  onFocus($event: KeyboardEvent) {
-
-    $event.preventDefault();
-
-    this.input.selectionStart = 0;
-    this.input.selectionEnd = 0;
-
-
-    setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
-  }
-
 
   @HostListener("keydown", ['$event', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, keyCode) {
 
-    const key = String.fromCharCode(keyCode);
+    // allow Ctrl + C, prevent Ctrl + V
+    if (($event.ctrlKey || $event.metaKey) && keyCode != 86) {
+      return;
+    }
 
+    // clear selection when typings starts
+    if (this.input.selectionEnd > this.input.selectionStart) {
+      setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
+    }
+
+    // block all keyboard behaviour, all changes are now made via input.value
     if (keyCode !== TAB) {
       $event.preventDefault();
     }
+
+    const key = String.fromCharCode(keyCode);
 
     const cursorPos = this.input.selectionStart;
 
