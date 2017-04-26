@@ -33,21 +33,21 @@ export class InputMask implements OnChanges {
   }
 
   @HostListener("keydown", ['$event','$event.key', '$event.keyCode'])
-  onKeyDown($event, key, keyCode) {
+  onKeyDown($event: KeyboardEvent, key, keyCode) {
 
     $event.preventDefault();
 
     const cursorPos = this.input.selectionStart;
 
     if (KEY_ACTIONS[keyCode]) {
-      KEY_ACTIONS[keyCode](this.input, cursorPos);
+      KEY_ACTIONS[keyCode](this.input, cursorPos, this.mask, key, keyCode);
     }
 
   }
 
 }
 
-type KeyAction = (input: HTMLInputElement, position:number) => void
+type KeyAction = (input: HTMLInputElement, position:number, mask?:string, key?:string, keyCode?:number) => void
 
 
 const handleRightArrow:KeyAction = (input, position) => {
@@ -61,7 +61,7 @@ const handleRightArrow:KeyAction = (input, position) => {
 
 
 
-const handleLeftArrow:KeyAction = (input, position) => {
+function handleLeftArrow(input, position) {
 
   const value = input.value;
 
@@ -69,7 +69,23 @@ const handleLeftArrow:KeyAction = (input, position) => {
 
   setInputCursorPosition(input, previousNonSpacePosition);
 
+}
+
+
+
+const handleNumeric:KeyAction = (input,  position, mask, key, keyCode) => {
+
+  if ( keyCode < 48 || keyCode > 57 ) {
+    return;
+  }
+
+  const currentValue = input.value;
+
+  input.value = currentValue.slice(0, position) + key + currentValue.slice(position + 1);
+
+  handleRightArrow(input, position);
 };
+
 
 
 
@@ -80,8 +96,12 @@ const KEY_ACTIONS: {[key:number]: KeyAction} = {};
 KEY_ACTIONS[RIGHT_ARROW] = handleRightArrow;
 KEY_ACTIONS[LEFT_ARROW] = handleLeftArrow;
 
+for (let i = 48; i <= 57; i++) {
+  KEY_ACTIONS[i] = handleNumeric;
+}
 
-//>>  ____  _<<
+
+
 
 const SPECIAL_CHARS_REGEX = {
   ' ': {
@@ -94,12 +114,8 @@ const SPECIAL_CHARS_REGEX = {
   }
 };
 
-const MASK_CHAR_TYPES_REGEX = {
-  9  : /'[0-9]{1}'/,
-  a  : /'[a-z]{1}'/,
-  A  : /'[A-Z]{1}'/,
-  '*' : /[.]{1}/
-};
+// 9, a, A, *
+
 
 
 
