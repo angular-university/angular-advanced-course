@@ -2,12 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
-import {InputMaskDirectiveModule} from "./input-mask/index";
-
 import { Routes, RouterModule } from '@angular/router';
 import { MasksComponent } from './masks/masks.component';
+import {InputMaskDirectiveModule} from "au-mask";
 
 const routes: Routes = [
   {
@@ -31,5 +29,7 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
 
