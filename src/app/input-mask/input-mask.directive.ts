@@ -13,7 +13,7 @@ import {setInputCursorPosition} from "./set_input_cursor_position";
 @Directive({
   selector: 'input[au-mask]'
 })
-export class InputMask implements OnChanges {
+export class InputMaskDirective implements OnChanges {
 
   @Input('au-mask')
   mask = '';
