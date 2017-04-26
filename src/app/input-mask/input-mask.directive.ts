@@ -3,9 +3,10 @@ import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./cursor_handlers";
 import {initHelperMask, initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
+import {never} from "./fp_utils";
 
 
-export const never = () => false;
+
 
 
 @Directive({
