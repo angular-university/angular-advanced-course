@@ -1,0 +1,25 @@
+.masks {
+  padding-top: 80px;
+}
+
+.masks h1 {
+  margin-bottom: 40px;
+}
+
+.masks input {
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 23px;
+  font-family: "Courier", serif;
+  width:410px;
+  margin-bottom: 30px;
+  border: 2px solid darkgray;
+  padding: 5px 0;
+}
+
+.masks label {
+  display: block;
+  margin-bottom: 5px;
+
+}

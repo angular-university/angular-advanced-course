@@ -6,18 +6,30 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {InputMaskDirectiveModule} from "./input-mask/index";
 
+import { Routes, RouterModule } from '@angular/router';
+import { MasksComponent } from './masks/masks.component';
+
+const routes: Routes = [
+  {
+    path: 'masks',
+    component: MasksComponent
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MasksComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule.forRoot(routes),
     InputMaskDirectiveModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
