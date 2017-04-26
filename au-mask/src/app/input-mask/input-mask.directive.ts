@@ -61,10 +61,6 @@ export class InputMaskDirective implements OnChanges {
     const maskDigit = this.helperMask.charAt(cursorPos),
           digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
 
-    console.log("helperMask", '>>' + this.helperMask + '<<');
-    console.log("maskDigit", maskDigit);
-    console.log("cursorPos", cursorPos);
-
     if (digitValidator(key)) {
       applyCharToInput(this.input, cursorPos, key);
       handleRightArrow(this.input, cursorPos);
