@@ -1,10 +1,10 @@
 
 import {setInputCursorPosition} from "./set_input_cursor_position";
 import * as findLastIndex from 'lodash.findlastindex';
-import * as findIndex from 'lodash.findindex';
 import * as includes from 'lodash.includes';
 import {SPECIAL_CHARACTERS} from "./mask_placeholder";
 import {LEFT_ARROW, RIGHT_ARROW} from "./key_codes";
+import {findFirstNonSpecialCharPosition} from "./utils";
 
 export type KeyAction = (input: HTMLInputElement, position: number) => void;
 
@@ -14,7 +14,7 @@ export const handleRightArrow:KeyAction = (input, position) => {
 
   const value = input.value;
 
-  const nextNonSpecialCharOffset = findIndex(value.slice(position + 1), char => ! includes(SPECIAL_CHARACTERS, char) );
+  const nextNonSpecialCharOffset = findFirstNonSpecialCharPosition(value.slice(position + 1));
 
   setInputCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
 
@@ -31,6 +31,7 @@ export function handleLeftArrow(input, position) {
   setInputCursorPosition(input, previousNonSpecialCharPosition);
 
 }
+
 
 
 

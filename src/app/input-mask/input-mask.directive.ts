@@ -3,8 +3,10 @@ import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./cursor_handlers";
 import {initHelperMask, initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
-import {never} from "./fp_utils";
+import {never} from "./utils";
 import {TAB} from "./key_codes";
+import {setInputCursorPosition} from "./set_input_cursor_position";
+import {findFirstNonSpecialCharPosition} from "./utils";
 
 
 
@@ -31,12 +33,11 @@ export class InputMask implements OnChanges {
     }
   }
 
-/*
+
   @HostListener('focus')
   onFocus() {
-    console.log('focus');
-    //setInputCursorPosition(this.input, 3);
-  }*/
+    setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
+  }
 
 
   @HostListener("keydown", ['$event', '$event.key', '$event.keyCode'])

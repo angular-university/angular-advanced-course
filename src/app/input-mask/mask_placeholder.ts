@@ -1,4 +1,3 @@
-
 const SPECIAL_CHARS_REGEX = {
   ' ': {
     replaceWith: '  '
@@ -10,7 +9,7 @@ const SPECIAL_CHARS_REGEX = {
     replaceWith: '/'
   },
   '+': {
-    replaceWith: '+ '
+    replaceWith: '+'
   }
 };
 
