@@ -26,3 +26,8 @@ export function initPlaceholderMask(input:string) {
   return '  ' + value;
 }
 
+
+
+export function findMaskDigitForPosition(value:string, cursorPos:number, mask:string) {
+  return "9";
+}

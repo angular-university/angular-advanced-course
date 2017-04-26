@@ -1,9 +1,8 @@
 import {Directive, ElementRef, HostBinding, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
-import {handleLeftArrow} from "./key-handlers/handle_left_arrow";
-import {handleRightArrow} from "./key-handlers/handle_right_arrow";
-import {KeyAction} from "./key-handlers/key_action";
-import {initPlaceholderMask} from "./init_placeholder_mask";
-import {applyCharToInput} from "./key-handlers/apply_char_to_input";
+import {handleLeftArrow, handleRightArrow, KeyAction} from "./cursor_handlers";
+import {findMaskDigitForPosition, initPlaceholderMask} from "./mask_placeholder";
+import {applyCharToInput} from "./apply_char_to_input";
+
 
 
 const LEFT_ARROW =	37, RIGHT_ARROW = 39;
@@ -12,10 +11,6 @@ const ACTIONS_PER_KEY_CODE: {[key:number]: KeyAction} = {};
 
 ACTIONS_PER_KEY_CODE[RIGHT_ARROW] = handleRightArrow;
 ACTIONS_PER_KEY_CODE[LEFT_ARROW] = handleLeftArrow;
-
-
-const ACTIONS_PER_CHAR: {[key:string]: KeyAction} = {};
-
 
 
 
@@ -51,20 +46,37 @@ export class InputMask implements OnChanges {
 
     const cursorPos = this.input.selectionStart;
 
-    if (isCursorKey(keyCode)) {
-      ACTIONS_PER_KEY_CODE[keyCode](this.input, cursorPos, this.mask, key, keyCode);
+    if (ACTIONS_PER_KEY_CODE[keyCode]) {
+      ACTIONS_PER_KEY_CODE[keyCode](this.input, cursorPos);
       return;
     }
 
+    const maskDigit = findMaskDigitForPosition(this.input.value, cursorPos, this.mask);
 
-
-    applyCharToInput(this.input, cursorPos, key);
-    handleRightArrow(this.input, cursorPos);
-
+    if (MASK_DIGIT_VALIDATORS[maskDigit](key)) {
+      applyCharToInput(this.input, cursorPos, key);
+      handleRightArrow(this.input, cursorPos);
+    }
   }
 
 
 }
 
 
-const isCursorKey = (keyCode) => keyCode === 37 || keyCode === 39;
+
+type DigitValidator = (char:string) => boolean;
+
+const numericValidator = char => /[0-9]{1}/.test(char);
+
+const lowerCaseValidator = char => /[a-z]{1}/.test(char);
+
+const upperCaseValidator = char => /[A-Z]{1}/.test(char);
+
+
+const MASK_DIGIT_VALIDATORS: {[key:string]:DigitValidator} = {
+  '9': numericValidator,
+  'a': lowerCaseValidator,
+  'A': upperCaseValidator
+};
+
+
