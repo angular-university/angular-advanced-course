@@ -1,9 +1,9 @@
 
-
-import * as findLastIndex from 'lodash.findlastindex';
 import {setInputCursorPosition} from "./set_input_cursor_position";
-
-
+import * as findLastIndex from 'lodash.findlastindex';
+import * as findIndex from 'lodash.findindex';
+import * as includes from 'lodash.includes';
+import {SPECIAL_CHARACTERS} from "./mask_placeholder";
 
 export type KeyAction = (input: HTMLInputElement, position: number) => void;
 
@@ -13,9 +13,9 @@ export const handleRightArrow:KeyAction = (input, position) => {
 
   const value = input.value;
 
-  const nextNonSpaceOffset = value.slice(position + 1).search(/[^\s]{1}/);
+  const nextNonSpecialCharOffset = findIndex(value.slice(position + 1), char => ! includes(SPECIAL_CHARACTERS, char) );
 
-  setInputCursorPosition(input, position + 1 + nextNonSpaceOffset);
+  setInputCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
 
 };
 
@@ -25,9 +25,9 @@ export function handleLeftArrow(input, position) {
 
   const value = input.value;
 
-  const previousNonSpacePosition = findLastIndex(value.slice(0, position), char => char !== ' ' );
+  const previousNonSpecialCharPosition = findLastIndex(value.slice(0, position), char => ! includes(SPECIAL_CHARACTERS, char) );
 
-  setInputCursorPosition(input, previousNonSpacePosition);
+  setInputCursorPosition(input, previousNonSpecialCharPosition);
 
 }
 

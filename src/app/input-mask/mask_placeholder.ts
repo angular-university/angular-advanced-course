@@ -11,7 +11,7 @@ const SPECIAL_CHARS_REGEX = {
   }
 };
 
-
+export const SPECIAL_CHARACTERS = Object.keys(SPECIAL_CHARS_REGEX);
 
 export function initPlaceholderMask(input:string) {
 
@@ -28,6 +28,12 @@ export function initPlaceholderMask(input:string) {
 
 
 
-export function findMaskDigitForPosition(value:string, cursorPos:number, mask:string) {
+export function findMaskDigitForPosition(currentInputValue:string, cursorPosInsideInput:number, mask:string) {
+
+
+
+
   return "9";
+
+
 }
