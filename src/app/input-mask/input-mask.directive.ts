@@ -1,12 +1,12 @@
 import {Directive, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
-import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./cursor_handlers";
+import {ACTIONS_PER_KEY_CODE, findFirstNonSpecialCharPosition, handleRightArrow} from "./cursor_handlers";
 import {initHelperMask, initPlaceholder} from "./mask_placeholder";
 import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
 import {never} from "./utils";
 import {TAB} from "./key_codes";
 import {setInputCursorPosition} from "./set_input_cursor_position";
-import {findFirstNonSpecialCharPosition} from "./utils";
+
 
 
 
