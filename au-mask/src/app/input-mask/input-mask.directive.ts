@@ -1,12 +1,12 @@
 import {Directive, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
 import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./key_handlers";
-import {initPlaceholder} from "./mask_placeholder";
-import {applyCharToInput} from "./apply_char_to_input";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
-import {findFirstNonSpecialCharPosition, never} from "./utils";
+import {
+  findFirstNonSpecialCharPosition, never, overWriteCharAtPosition, setCursorPosition,
+  SPECIAL_CHARACTERS
+} from "./mask.utils";
 import {TAB} from "./key_codes";
-import {setInputCursorPosition} from "./set_input_cursor_position";
-
+import * as includes from 'lodash.includes';
 
 
 
@@ -28,11 +28,27 @@ export class InputMaskDirective implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['mask']) {
-      this.input.value = initPlaceholder(this.mask);
+      this.input.value = this.initPlaceholder(this.mask);
       this.helperMask = this.mask.replace(/\s/g, '  ');
     }
   }
 
+  initPlaceholder(mask:string) {
+
+    const chars = mask.split('');
+
+    const value = chars.reduce((result, char) => {
+
+      if (char == ' ') {
+        return result += '  ';
+      }
+
+      return result += includes(SPECIAL_CHARACTERS, char) ? char : '_';
+
+    }, '');
+
+    return value;
+  }
 
   @HostListener("keydown", ['$event', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, keyCode) {
@@ -49,7 +65,7 @@ export class InputMaskDirective implements OnChanges {
 
     // clear selection when typing starts - cannot be done on focus due to cross-browser compatibility
     if (this.input.selectionEnd > this.input.selectionStart) {
-      setInputCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
+      setCursorPosition(this.input, findFirstNonSpecialCharPosition(this.input.value));
     }
 
     const key = String.fromCharCode(keyCode);
@@ -69,7 +85,7 @@ export class InputMaskDirective implements OnChanges {
           digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
 
     if (digitValidator(key)) {
-      applyCharToInput(this.input, cursorPos, key);
+      overWriteCharAtPosition(this.input, cursorPos, key);
       handleRightArrow(this.input, cursorPos);
     }
 

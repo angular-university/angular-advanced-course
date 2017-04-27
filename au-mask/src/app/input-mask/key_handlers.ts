@@ -1,8 +1,9 @@
 
-import {setInputCursorPosition} from "./set_input_cursor_position";
 import {BACKSPACE, DELETE, LEFT_ARROW, RIGHT_ARROW} from "./key_codes";
-import {applyCharToInput} from "./apply_char_to_input";
-import {findFirstNonSpecialCharPosition, findLastNonSpecialCharPosition} from "./utils";
+import {
+  findFirstNonSpecialCharPosition, findLastNonSpecialCharPosition, overWriteCharAtPosition,
+  setCursorPosition
+} from "./mask.utils";
 
 
 
@@ -16,7 +17,7 @@ export const handleRightArrow:KeyAction = (input, position) => {
 
   const nextNonSpecialCharOffset = findFirstNonSpecialCharPosition(value.slice(position + 1));
 
-  setInputCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
+  setCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
 
 };
 
@@ -28,7 +29,7 @@ function handleLeftArrow(input, position) {
 
   const previousNonSpecialCharPosition = findLastNonSpecialCharPosition(value.slice(0, position));
 
-  setInputCursorPosition(input, previousNonSpecialCharPosition);
+  setCursorPosition(input, previousNonSpecialCharPosition);
 
 }
 
@@ -39,15 +40,15 @@ function handleBackSpace(input, position) {
 
   const previousNonSpecialCharPosition = findLastNonSpecialCharPosition(value.slice(0, position));
 
-  applyCharToInput(input, previousNonSpecialCharPosition, '_');
+  overWriteCharAtPosition(input, previousNonSpecialCharPosition, '_');
 
-  setInputCursorPosition(input, previousNonSpecialCharPosition);
+  setCursorPosition(input, previousNonSpecialCharPosition);
 
 }
 
 function handleDelete(input, position) {
 
-  applyCharToInput(input, position, '_');
+  overWriteCharAtPosition(input, position, '_');
 
 }
 
