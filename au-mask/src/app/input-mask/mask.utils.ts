@@ -1,7 +1,7 @@
 
 
 
-import * as includes from 'lodash.includes'; 
+import * as includes from 'lodash.includes';
 import * as findIndex from 'lodash.findindex';
 import * as findLastIndex from 'lodash.findlastindex';
 
@@ -17,6 +17,12 @@ export const SPECIAL_CHARACTERS = [" ", "/", "(", ")", "+", "\/", "-"];
 
 
 export const never = () => false;
+
+
+export function isInputSelectionActive(input: HTMLInputElement) {
+  return input.selectionEnd > input.selectionStart;
+}
+
 
 export function setCursorPosition(input: HTMLInputElement, position:number) {
   input.setSelectionRange(position, position);
