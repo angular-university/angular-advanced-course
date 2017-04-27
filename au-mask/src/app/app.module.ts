@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import {InputMaskDirective} from "./input-mask/input-mask.directive";
+import {InputMaskDirectiveModule} from "../../index";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InputMaskDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    InputMaskDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
