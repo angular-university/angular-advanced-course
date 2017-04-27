@@ -1,7 +1,7 @@
 
 import {BACKSPACE, DELETE, LEFT_ARROW, RIGHT_ARROW} from "./key_codes";
 import {
-  findFirstNonSpecialCharPosition, findLastNonSpecialCharPosition, overWriteCharAtPosition,
+  findFirstNonSpecialCharPosition, findLastNonSpecialCharPosition, moveCursorToEnd, overWriteCharAtPosition,
   setCursorPosition
 } from "./mask.utils";
 
@@ -17,7 +17,12 @@ export const handleRightArrow:KeyAction = (input, position) => {
 
   const nextNonSpecialCharOffset = findFirstNonSpecialCharPosition(value.slice(position + 1));
 
-  setCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
+  if (nextNonSpecialCharOffset >= 0) {
+    setCursorPosition(input, position + 1 + nextNonSpecialCharOffset);
+  }
+  else {
+    moveCursorToEnd(input);
+  }
 
 };
 

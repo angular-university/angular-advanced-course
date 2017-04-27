@@ -11,8 +11,15 @@ export const SPECIAL_CHARACTERS = [" ", "/", "(", ")", "+", "\/", "-"];
 
 export const never = () => false;
 
-export function setCursorPosition(input, position) {
+export function setCursorPosition(input: HTMLInputElement, position:number) {
   input.setSelectionRange(position, position);
+}
+
+
+export function moveCursorToEnd(input: HTMLInputElement) {
+  const value = input.value;
+  const lastPosition = value.length;
+  input.setSelectionRange(lastPosition, lastPosition);
 }
 
 
