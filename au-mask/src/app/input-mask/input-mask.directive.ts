@@ -150,7 +150,6 @@ export class InputMaskDirective implements OnChanges {
   }
 
 
-
   handleDelete(position) {
 
     overWriteCharAtPosition(this.input, position, '_');
