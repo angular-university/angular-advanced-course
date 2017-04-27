@@ -1,7 +1,7 @@
 {
   "name": "angular-input-mask",
   "description": "Angular Input Mask - Phone Numbers, Credit Cards, SSN Numbers, etc.",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

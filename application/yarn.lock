@@ -208,9 +208,9 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular-input-mask@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/angular-input-mask/-/angular-input-mask-0.0.4.tgz#21d1923df7cd8a8343f057b89b7278169b955fdd"
+angular-input-mask@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/angular-input-mask/-/angular-input-mask-0.0.7.tgz#dd60759b78df63266f3b3830eed0ab16807b284e"
   dependencies:
     "@angular/common" "^4.0.0"
     "@angular/compiler" "^4.0.0"
