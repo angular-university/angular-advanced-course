@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import {InputMaskDirectiveModule} from "../../index";
+import {InputMaskDirectiveModule} from "./input-mask/index";
+
 
 @NgModule({
   declarations: [
