@@ -1,11 +1,11 @@
 import {Directive, ElementRef, HostListener, Input, OnChanges, SimpleChanges} from "@angular/core";
-import {ACTIONS_PER_KEY_CODE, handleRightArrow} from "./key_handlers";
 import {MASK_DIGIT_VALIDATORS} from "./digit_validators";
 import {
-  findFirstNonSpecialCharPosition, never, overWriteCharAtPosition, setCursorPosition,
+  findFirstNonSpecialCharPosition, findLastNonSpecialCharPosition, moveCursorToEnd, never, overWriteCharAtPosition,
+  setCursorPosition,
   SPECIAL_CHARACTERS
 } from "./mask.utils";
-import {TAB} from "./key_codes";
+import {BACKSPACE, DELETE, LEFT_ARROW, RIGHT_ARROW, TAB} from "./key_codes";
 import * as includes from 'lodash.includes';
 
 
@@ -33,22 +33,6 @@ export class InputMaskDirective implements OnChanges {
     }
   }
 
-  initPlaceholder(mask:string) {
-
-    const chars = mask.split('');
-
-    const value = chars.reduce((result, char) => {
-
-      if (char == ' ') {
-        return result += '  ';
-      }
-
-      return result += includes(SPECIAL_CHARACTERS, char) ? char : '_';
-
-    }, '');
-
-    return value;
-  }
 
   @HostListener("keydown", ['$event', '$event.keyCode'])
   onKeyDown($event: KeyboardEvent, keyCode) {
@@ -72,9 +56,19 @@ export class InputMaskDirective implements OnChanges {
 
     const cursorPos = this.input.selectionStart;
 
-    if (ACTIONS_PER_KEY_CODE[keyCode]) {
-      ACTIONS_PER_KEY_CODE[keyCode](this.input, cursorPos);
-      return;
+    switch(keyCode) {
+
+      case LEFT_ARROW: this.handleLeftArrow(cursorPos);
+                        return;
+
+      case RIGHT_ARROW: this.handleRightArrow(cursorPos);
+                        return;
+
+      case BACKSPACE: this.handleBackSpace(cursorPos);
+        return;
+
+      case DELETE: this.handleDelete(cursorPos);
+        return;
     }
 
     if (key.length > 1) {
@@ -82,13 +76,74 @@ export class InputMaskDirective implements OnChanges {
     }
 
     const maskDigit = this.helperMask.charAt(cursorPos),
-          digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
+      digitValidator = MASK_DIGIT_VALIDATORS[maskDigit] || never;
 
     if (digitValidator(key)) {
       overWriteCharAtPosition(this.input, cursorPos, key);
-      handleRightArrow(this.input, cursorPos);
+      this.handleRightArrow(cursorPos);
     }
 
+  }
+
+  handleRightArrow(position) {
+
+    const value = this.input.value;
+
+    const nextNonSpecialCharOffset = findFirstNonSpecialCharPosition(value.slice(position + 1));
+
+    if (nextNonSpecialCharOffset >= 0) {
+      setCursorPosition(this.input, position + 1 + nextNonSpecialCharOffset);
+    }
+    else {
+      moveCursorToEnd(this.input);
+    }
+
+  }
+
+  handleLeftArrow(position) {
+
+    const value = this.input.value;
+
+    const previousNonSpecialCharPosition = findLastNonSpecialCharPosition(value.slice(0, position));
+
+    setCursorPosition(this.input, previousNonSpecialCharPosition);
+  }
+
+
+  handleBackSpace(position) {
+
+    const value = this.input.value;
+
+    const previousNonSpecialCharPosition = findLastNonSpecialCharPosition(value.slice(0, position));
+
+    overWriteCharAtPosition(this.input, previousNonSpecialCharPosition, '_');
+
+    setCursorPosition(this.input, previousNonSpecialCharPosition);
+
+  }
+
+  handleDelete(position) {
+
+    overWriteCharAtPosition(this.input, position, '_');
+
+  }
+
+
+  initPlaceholder(mask: string) {
+
+    const chars = mask.split('');
+
+    const value = chars.reduce((result, char) => {
+
+      if (char == ' ') {
+        return result += '  ';
+      }
+
+      return result += includes(SPECIAL_CHARACTERS, char) ? char : '_';
+
+    }, '');
+
+    return value;
   }
 
 
