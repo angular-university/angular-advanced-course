@@ -5,7 +5,7 @@ import {
   setCursorPosition,
   SPECIAL_CHARACTERS
 } from "./mask.utils";
-import {BACKSPACE, DELETE, LEFT_ARROW, RIGHT_ARROW, TAB} from "./key_codes";
+import {BACKSPACE, DELETE, LEFT_ARROW, RIGHT_ARROW, TAB} from "./mask.utils";
 import * as includes from 'lodash.includes';
 
 
