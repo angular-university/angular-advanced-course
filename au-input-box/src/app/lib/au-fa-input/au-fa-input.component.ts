@@ -1,32 +1,39 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {
+  Component,
+  Input,
+  ContentChild,
+  AfterContentInit,
+  ElementRef,
+  ContentChildren,
+  HostBinding
+} from '@angular/core';
+import {InputRefDirective} from "./input-ref.directive";
+
 
 @Component({
   selector: 'au-fa-input',
   templateUrl: './au-fa-input.component.html',
   styleUrls: ['./au-fa-input.component.css']
 })
-export class FontAwesomeInputComponent implements OnInit {
+export class FontAwesomeInputComponent implements AfterContentInit {
 
   @Input()
-  icon:string;
+  icon: string;
 
+  @ContentChild(InputRefDirective)
+  input: InputRefDirective;
 
-  constructor() {
-
-  }
-
-  ngOnInit() {
-
-
-
+  ngAfterContentInit() {
+    if (!this.input) {
+      console.error("the au-fa-input needs an input inside its content");
+    }
   }
 
   get classes() {
 
     const cssClasses = {
-      'fa':true,
-      'icon':true
+      'fa': true,
+      'icon': true
     };
 
     if (this.icon) {
@@ -34,7 +41,12 @@ export class FontAwesomeInputComponent implements OnInit {
     }
 
     return cssClasses;
+  }
 
+
+  @HostBinding('class.input-focus')
+  get isInputFocus() {
+    return this.input.focus;
   }
 
 
