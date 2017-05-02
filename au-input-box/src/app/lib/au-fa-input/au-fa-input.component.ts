@@ -5,7 +5,7 @@ import {
   AfterContentInit,
   HostBinding
 } from '@angular/core';
-import {InputRefDirective} from "./input-ref.directive";
+import {InputRefDirective} from "../common/input-ref.directive";
 
 
 @Component({
