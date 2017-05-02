@@ -1,0 +1,12 @@
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top:65px;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+
+}
