@@ -21,7 +21,8 @@ export class FontAwesomeInputComponent implements OnInit {
   get classes() {
 
     const cssClasses = {
-      'fa':true
+      'fa':true,
+      'icon':true
     };
 
     if (this.icon) {

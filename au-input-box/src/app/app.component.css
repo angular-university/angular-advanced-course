@@ -1,7 +1,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 600px;
   padding-top:65px;
 }
 
@@ -9,4 +9,9 @@ label {
   display: block;
   margin-top: 30px;
 
+}
+
+
+.form-row {
+  width:300px;
 }
