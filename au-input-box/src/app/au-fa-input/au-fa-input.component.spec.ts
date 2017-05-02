@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AuSvgButtonComponent } from './au-svg-button.component';
+import { FontAwesomeInputComponent } from './au-fa-input.component';
 
-describe('AuSvgButtonComponent', () => {
-  let component: AuSvgButtonComponent;
-  let fixture: ComponentFixture<AuSvgButtonComponent>;
+describe('AuFaInputComponent', () => {
+  let component: FontAwesomeInputComponent;
+  let fixture: ComponentFixture<FontAwesomeInputComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuSvgButtonComponent ]
+      declarations: [ FontAwesomeInputComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AuSvgButtonComponent);
+    fixture = TestBed.createComponent(FontAwesomeInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
