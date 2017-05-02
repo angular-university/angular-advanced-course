@@ -1,10 +1,18 @@
 
-.au-fa-input {
+:host {
   display: inline-block;
+  border: 1px solid lightgray;
 }
-
 
 .icon {
   width: 21px;
   text-align: center;
+  background: white;
+  padding-left: 5px;
+}
+
+
+:host /deep/ input  {
+ outline: none;
+  border:none;
 }
