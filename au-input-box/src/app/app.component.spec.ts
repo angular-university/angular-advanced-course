@@ -21,6 +21,14 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
+
+  it('should render a font-awesome email button', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.fa.icon.fa-envelope')).toBeTruthy();
+  }));
+
   /*
 
   it(`should have as title 'app works!'`, async(() => {
