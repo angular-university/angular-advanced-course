@@ -23,7 +23,7 @@ export class AuMdInputComponent implements AfterContentInit {
 
   @HostBinding('class.input-focus')
   get isInputFocus() {
-    return this.input.focus;
+    return this.input ? this.input.focus : false;
   }
 
 
