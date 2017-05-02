@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {InputBoxConfigService} from "../config/input-box-config.service";
 import {Observable} from 'rxjs/Observable';
 
 @Component({
@@ -12,24 +11,14 @@ export class FontAwesomeInputComponent implements OnInit {
   @Input()
   icon:string;
 
-  iconStyles$: Observable<object>;
 
-  constructor(private configService: InputBoxConfigService) {
+  constructor() {
 
   }
 
   ngOnInit() {
 
-    this.iconStyles$ = this.configService.config$.map(config => {
 
-      const styles = {};
-
-      if (config.iconSize) {
-        styles['width'] = config.iconSize;
-      }
-
-      return styles;
-    });
 
   }
 
