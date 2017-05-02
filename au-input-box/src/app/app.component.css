@@ -6,12 +6,16 @@
 }
 
 label {
-  display: block;
-  margin-top: 30px;
+  width: 200px;
+  text-align: right;
+}
 
+.form-row {
+  width:500px;
+  margin-bottom: 10px;
 }
 
 
-.form-row {
-  width:300px;
+.au-fa-input input {
+  background: red;
 }
