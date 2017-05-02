@@ -5,10 +5,11 @@
 }
 
 .icon {
-  width: 21px;
+  width: 20px;
   text-align: center;
   background: white;
   padding-left: 5px;
+  padding-right: 2px;
 }
 
 

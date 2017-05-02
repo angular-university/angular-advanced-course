@@ -16,6 +16,6 @@ label {
 }
 
 
-.au-fa-input input {
-  background: red;
+input {
+  height: 25px;
 }
