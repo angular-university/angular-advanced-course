@@ -3,19 +3,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { FontAwesomeInputComponent } from './au-fa-input/au-fa-input.component';
+import {AuInputBoxModule} from "./lib/au-input-box.module";
 
+import 'rxjs/add/operator/map';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FontAwesomeInputComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AuInputBoxModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
