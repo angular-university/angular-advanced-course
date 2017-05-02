@@ -1,12 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import {InputBoxConfigDirective} from "./lib/config/input-box-config.directive";
+import {InputRefDirective} from "./lib/common/input-ref.directive";
+import {AuMdInputComponent} from "./lib/au-md-input/au-md-input.component";
+import {FontAwesomeInputComponent} from "./lib/au-fa-input/au-fa-input.component";
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        InputBoxConfigDirective, FontAwesomeInputComponent, AuMdInputComponent, InputRefDirective
       ],
     }).compileComponents();
   }));

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AuMdInputComponent } from './au-md-input.component';
+import {InputRefDirective} from "../common/input-ref.directive";
 
 describe('AuMdInputComponent', () => {
   let component: AuMdInputComponent;
@@ -8,7 +9,7 @@ describe('AuMdInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AuMdInputComponent ]
+      declarations: [ AuMdInputComponent, InputRefDirective ]
     })
     .compileComponents();
   }));

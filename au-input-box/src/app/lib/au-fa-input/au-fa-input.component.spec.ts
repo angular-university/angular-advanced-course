@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FontAwesomeInputComponent } from './au-fa-input.component';
+import {InputRefDirective} from "../common/input-ref.directive";
 
 describe('AuFaInputComponent', () => {
   let component: FontAwesomeInputComponent;
@@ -8,7 +9,7 @@ describe('AuFaInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FontAwesomeInputComponent ]
+      declarations: [ FontAwesomeInputComponent, InputRefDirective ]
     })
     .compileComponents();
   }));
