@@ -3,8 +3,6 @@ import {
   Input,
   ContentChild,
   AfterContentInit,
-  ElementRef,
-  ContentChildren,
   HostBinding
 } from '@angular/core';
 import {InputRefDirective} from "./input-ref.directive";
