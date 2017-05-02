@@ -3,14 +3,15 @@ import {CommonModule} from '@angular/common';
 import {FontAwesomeInputComponent} from "./au-fa-input/au-fa-input.component";
 import {InputBoxConfigService} from "./config/input-box-config.service";
 import {InputBoxConfigDirective} from "./config/input-box-config.directive";
-import {InputRefDirective} from "./au-fa-input/input-ref.directive";
+import {InputRefDirective} from "./common/input-ref.directive";
+import {AuMdInputComponent} from "./au-md-input/au-md-input.component";
 
 
 
 @NgModule({
-  declarations: [FontAwesomeInputComponent, InputBoxConfigDirective, InputRefDirective],
+  declarations: [ InputBoxConfigDirective, FontAwesomeInputComponent, AuMdInputComponent, InputRefDirective],
   imports: [CommonModule],
-  exports: [FontAwesomeInputComponent, InputBoxConfigDirective, InputRefDirective]
+  exports: [FontAwesomeInputComponent, AuMdInputComponent, InputRefDirective]
 })
 export class AuInputBoxModule {
 

@@ -11,7 +11,7 @@ import {InputRefDirective} from "../common/input-ref.directive";
 @Component({
   selector: 'au-fa-input',
   templateUrl: './au-fa-input.component.html',
-  styleUrls: ['./au-fa-input.component.css']
+  styleUrls: ['../common/au-input-box.css', './au-fa-input.component.css']
 })
 export class FontAwesomeInputComponent implements AfterContentInit {
 
