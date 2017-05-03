@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d8851cf-df38-469e-b4d2-bcc09f109c06" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/assets/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/angular-advanced-course.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.angular-cli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/app.e2e-spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/app.po.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/tsconfig.e2e.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/protractor.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/common/au-input-box.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/common/input-ref.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/environments/environment.prod.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/environments/environment.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/main.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/polyfills.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/test.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/tsconfig.app.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/tsconfig.spec.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/typings.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/tsconfig.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/tslint.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/yarn.lock" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.angular-cli.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/app.e2e-spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/app.po.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/tsconfig.e2e.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/assets/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/environments/environment.prod.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/environments/environment.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/main.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/polyfills.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/test.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/tsconfig.app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/tsconfig.spec.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/typings.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/tsconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/tslint.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/yarn.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.angular-cli.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/app.e2e-spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/app.po.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/tsconfig.e2e.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-input-box.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/common/au-input-box.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/common/input-ref.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.directive.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.service.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/assets/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/environments/environment.prod.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/environments/environment.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/main.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/polyfills.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/test.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/tsconfig.app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/tsconfig.spec.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/typings.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/tsconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/tslint.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/yarn.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.angular-cli.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/app.e2e-spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/app.po.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/tsconfig.e2e.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app-routing.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/digit_validators.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/input-mask.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/mask.utils.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/assets/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/environments/environment.prod.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/environments/environment.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/main.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/polyfills.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/test.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/tsconfig.app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/tsconfig.spec.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/typings.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/tsconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/tslint.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/yarn.lock" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/au-input/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/au-input/package.json" />
+        <option value="$PROJECT_DIR$/au-input/src/app/app.component.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/au-input/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au-input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au-input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au-input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="au-input" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d8851cf-df38-469e-b4d2-bcc09f109c06" name="Default" comment="" />
+      <created>1493805480442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493805480442</updated>
+      <workItem from="1493805482754" duration="1429000" />
+    </task>
+    <task id="LOCAL-00001" summary="README">
+      <created>1493805972647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493805972648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="README">
+      <created>1493806087682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493806087682</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README">
+      <created>1493806113186</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493806113186</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1429000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="README" />
+    <option name="LAST_COMMIT_MESSAGE" value="README" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/.angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
