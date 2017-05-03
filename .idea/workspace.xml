@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8851cf-df38-469e-b4d2-bcc09f109c06" name="Default" comment="au-input">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/common/au-input-box.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/common/input-ref.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.component.css" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.component.html" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.module.ts" afterPath="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/package.json" afterPath="$PROJECT_DIR$/au-input/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,34 +19,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="476">
               <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/au-input/src/app/app.module.ts">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/au-input/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/au-input/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +69,6 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/au-input/.angular-cli.json" />
-        <option value="$PROJECT_DIR$/au-input/package.json" />
         <option value="$PROJECT_DIR$/au-input/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" />
         <option value="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" />
@@ -88,6 +78,7 @@
         <option value="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" />
         <option value="$PROJECT_DIR$/au-input/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/au-input/package.json" />
       </list>
     </option>
   </component>
@@ -123,6 +114,16 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-advanced-course" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="angular-advanced-course" />
@@ -191,6 +192,11 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -218,7 +224,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493805480442</updated>
-      <workItem from="1493805482754" duration="2024000" />
+      <workItem from="1493805482754" duration="2264000" />
     </task>
     <task id="LOCAL-00001" summary="README">
       <created>1493805972647</created>
@@ -241,11 +247,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493806113186</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="au-input">
+      <created>1493807744653</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493807744653</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2024000" />
+    <option name="totallyTimeSpent" value="2264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -273,6 +286,7 @@
     <option name="processedProjectFiles" value="true" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -296,26 +310,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/au-input/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/au-input/.angular-cli.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -408,10 +406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -423,6 +421,38 @@
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
