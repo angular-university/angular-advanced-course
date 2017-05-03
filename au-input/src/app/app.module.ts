@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import 'rxjs/add/operator/map';
+import { AuFaInputComponent } from './lib/au-fa-input/au-fa-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuFaInputComponent
   ],
   imports: [
     BrowserModule,
