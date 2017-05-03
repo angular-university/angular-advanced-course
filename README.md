@@ -1,6 +1,5 @@
 
 # Angular Advanced Library Laboratory Course
-### Build Your Own Library
 
 This repository contains the code of the [Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-university.io/course/angular-advanced-course).
 
