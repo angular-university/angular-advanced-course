@@ -1,172 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d8851cf-df38-469e-b4d2-bcc09f109c06" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/assets/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/angular-advanced-course.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.angular-cli.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/app.e2e-spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/app.po.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/e2e/tsconfig.e2e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/protractor.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/common/au-input-box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/common/input-ref.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/environments/environment.prod.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/environments/environment.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/polyfills.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/test.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/tsconfig.app.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/tsconfig.spec.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/src/typings.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/tslint.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au-input/yarn.lock" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/app/masks/masks.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/yarn.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-fa-input/au-fa-input.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-input-box.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/au-md-input/au-md-input.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/common/au-input-box.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/common/input-ref.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.directive.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.service.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/app/lib/config/input-box-config.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input-box/yarn.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app-routing.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/digit_validators.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/input-mask.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/app/input-mask/mask.utils.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/assets/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/environments/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/tsconfig.app.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/au-mask/yarn.lock" afterPath="" />
+    <list default="true" id="2d8851cf-df38-469e-b4d2-bcc09f109c06" name="Default" comment="au-input">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/common/au-input-box.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/common/input-ref.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/au-input/src/app/lib/config/input-box-config.ts" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.component.css" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.component.html" afterPath="$PROJECT_DIR$/au-input/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au-input/src/app/app.module.ts" afterPath="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -181,12 +36,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/au-input/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,6 +80,14 @@
         <option value="$PROJECT_DIR$/au-input/.angular-cli.json" />
         <option value="$PROJECT_DIR$/au-input/package.json" />
         <option value="$PROJECT_DIR$/au-input/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html" />
+        <option value="$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css" />
+        <option value="$PROJECT_DIR$/au-input/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/au-input/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -292,32 +177,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-advanced-course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-advanced-course" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="au-input" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -329,6 +188,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,6 +203,11 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -352,7 +218,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493805480442</updated>
-      <workItem from="1493805482754" duration="1429000" />
+      <workItem from="1493805482754" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="README">
       <created>1493805972647</created>
@@ -379,18 +245,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1429000" />
+    <option name="totallyTimeSpent" value="2024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30738682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -413,7 +280,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README" />
-    <option name="LAST_COMMIT_MESSAGE" value="README" />
+    <MESSAGE value="au-input" />
+    <option name="LAST_COMMIT_MESSAGE" value="au-input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -446,9 +314,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/common/au-input-box.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/common/input-ref.directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-input-box.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-md-input/au-md-input.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/lib/au-fa-input/au-fa-input.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au-input/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

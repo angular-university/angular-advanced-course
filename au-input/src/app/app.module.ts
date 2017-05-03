@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import 'rxjs/add/operator/map';
-import {AuInputBoxModule} from "./lib/au-input-box.module";
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import {AuInputBoxModule} from "./lib/au-input-box.module";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AuInputBoxModule.forRoot()
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

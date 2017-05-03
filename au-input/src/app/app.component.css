@@ -20,14 +20,13 @@ input {
   height: 25px;
 }
 
+.normal-input {
+    width:200px;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 50px;
 }
 
-au-fa-input.input-focus.red-outline {
-         border:1px solid red;
-         -webkit-box-shadow: 0px 0px 5px  red;
-         box-shadow: 0px 0px 5px  red;
-}
