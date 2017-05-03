@@ -1,12 +1,12 @@
 
 .container {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 300px;
   padding-top:65px;
 }
 
 label {
-  width: 200px;
+  width: 100px;
   text-align: right;
 }
 
@@ -21,7 +21,7 @@ input {
 }
 
 .normal-input {
-    width:200px;
+    width:150px;
 }
 
 h1 {
