@@ -15,7 +15,7 @@
     display: inline-block;
 }
 
-input {
+:host /deep/ input {
     border:none;
     outline: none;
     height: 100%;
