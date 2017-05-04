@@ -5,7 +5,7 @@ This repository contains the code of the [Angular Advanced Library Laboratory Co
 
 This course repository is updated to Angular 4, there is a Yarn lock file available.
 
-![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v2.png)
+![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
 
 
 # RxJs and Reactive Patterns Angular Architecture Course
