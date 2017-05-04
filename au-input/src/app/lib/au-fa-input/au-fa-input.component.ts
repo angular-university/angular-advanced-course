@@ -10,6 +10,7 @@ export class AuFaInputComponent implements OnInit {
   @Input()
   icon:string;
 
+
   constructor() { }
 
   ngOnInit() {
