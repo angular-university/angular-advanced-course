@@ -21,9 +21,9 @@ For running this project we need and npm installed on our machine. These are som
 
 # Installing the Angular CLI
 
-With the following command the angular-cli will be installed globally in your machine:
+With the following command the angular-cli will be installed globally in your machine, as well as Yarn:
 
-    npm install -g @angular/cli
+    npm install -g @angular/cli yarn
 
 
 # How To install this repository
@@ -31,15 +31,17 @@ With the following command the angular-cli will be installed globally in your ma
 We can install the master branch using the following commands:
 
     git clone https://github.com/angular-university/angular-advanced-course.git
-    cd angular-advanced-course
-    npm install
-
-If you prefer the Yarn package manager, instead of npm install you can also run:
-
+    
+This repository is made of several separate npm modules, that are installable separately. For example, to run the au-input module, we can do the following:
+    
+    cd angular-advanced-course/au-input
     yarn
 
-Although npm install would also work, its recommended to use Yarn to install the course dependencies. Yarn has the big advantage that if you use it you will be
-installing the exact same dependencies than I installed in my machine, so you wont run into issues caused by semantic versioning updates.
+Its also possible to install the modules as usual using npm:
+
+    npm install 
+
+Yarn has the big advantage that if you use it you will be installing the exact same dependencies than I installed in my machine, so you wont run into issues caused by semantic versioning updates.
 
 This should take a couple of minutes. If there are issues, please post the complete error message in the Questions section of the course.
 
