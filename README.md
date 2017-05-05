@@ -66,7 +66,7 @@ We can checkout the remote branch and start tracking it with a local branch that
 
 # Other Courses
 
-# RxJs and Reactive Patterns Angular Architecture Course
+## RxJs and Reactive Patterns Angular Architecture Course
 
 If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:
 
@@ -76,7 +76,7 @@ If you are looking for the RxJs and Reactive Patterns Angular Architecture Cours
 
 
 
-# Angular Ngrx Reactive Extensions Architecture Course
+## Angular Ngrx Reactive Extensions Architecture Course
 
 If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:
 
@@ -88,7 +88,7 @@ If you are looking for the Angular Ngrx Reactive Extensions Architecture Course 
 
 
 
-# Angular 2 and Firebase - Build a Web Application Course
+## Angular 2 and Firebase - Build a Web Application Course
 
 If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:
 
@@ -99,7 +99,7 @@ If you are looking for the Angular 2 and Firebase - Build a Web Application Cour
 ![Angular firebase course](https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg)
 
 
-# Complete Typescript 2 Course - Build A REST API
+## Complete Typescript 2 Course - Build A REST API
 
 If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:
 
@@ -108,12 +108,4 @@ If you are looking for the Complete Typescript 2 Course - Build a REST API, the 
 [Github repo for this course](https://github.com/angular-university/complete-typescript-course)
 
 ![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
-
-
-
-
-
-
-
-
 
