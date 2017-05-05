@@ -76,7 +76,7 @@ With the following command the angular-cli will be installed globally in your ma
 
 We can install the master branch using the following commands:
 
-    git clone https://github.com/angular-university/ngrx-course.git
+    git clone https://github.com/angular-university/angular-advanced-course.git
     cd angular-advanced-course
     npm install
 
