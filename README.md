@@ -8,52 +8,6 @@ This course repository is updated to Angular 4, there is a Yarn lock file availa
 ![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
 
 
-# RxJs and Reactive Patterns Angular Architecture Course
-
-If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:
-
-[RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course)
-
-![RxJs and Reactive Patterns Angular Architecture Course](https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png)
-
-
-
-# Angular Ngrx Reactive Extensions Architecture Course
-
-If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:
-
-[Angular Ngrx Reactive Extensions Architecture Course](https://angular-university.io/course/angular2-ngrx)
-
-[Github repo for this course](https://github.com/angular-university/ngrx-course)
-
-![Angular Ngrx Course](https://angular-academy.s3.amazonaws.com/thumbnails/ngrx-angular.png)
-
-
-
-# Angular 2 and Firebase - Build a Web Application Course
-
-If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:
-
-[Angular 2 and Firebase - Build a Web Application](https://angular-university.io/course/build-an-application-with-angular2)
-
-[Github repo for this course](https://github.com/angular-university/angular-firebase-app)
-
-![Angular firebase course](https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg)
-
-
-# Complete Typescript 2 Course - Build A REST API
-
-If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:
-
-[https://angular-university.io/course/typescript-2-tutorial](https://github.com/angular-university/complete-typescript-course)
-
-[Github repo for this course](https://github.com/angular-university/complete-typescript-course)
-
-![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
-
-
-
-
 # Installation pre-requisites
 
 For running this project we need and npm installed on our machine. These are some tutorials to install node in different operating systems:
@@ -108,6 +62,52 @@ At certain points along the course, you will be asked to checkout other remote b
 We can checkout the remote branch and start tracking it with a local branch that has the same name, by using the following command:
 
       git checkout -b au-input origin/au-input
+
+
+# Other Courses
+
+# RxJs and Reactive Patterns Angular Architecture Course
+
+If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:
+
+[RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course)
+
+![RxJs and Reactive Patterns Angular Architecture Course](https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png)
+
+
+
+# Angular Ngrx Reactive Extensions Architecture Course
+
+If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:
+
+[Angular Ngrx Reactive Extensions Architecture Course](https://angular-university.io/course/angular2-ngrx)
+
+[Github repo for this course](https://github.com/angular-university/ngrx-course)
+
+![Angular Ngrx Course](https://angular-academy.s3.amazonaws.com/thumbnails/ngrx-angular.png)
+
+
+
+# Angular 2 and Firebase - Build a Web Application Course
+
+If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:
+
+[Angular 2 and Firebase - Build a Web Application](https://angular-university.io/course/build-an-application-with-angular2)
+
+[Github repo for this course](https://github.com/angular-university/angular-firebase-app)
+
+![Angular firebase course](https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg)
+
+
+# Complete Typescript 2 Course - Build A REST API
+
+If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:
+
+[https://angular-university.io/course/typescript-2-tutorial](https://github.com/angular-university/complete-typescript-course)
+
+[Github repo for this course](https://github.com/angular-university/complete-typescript-course)
+
+![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
 
 
 
