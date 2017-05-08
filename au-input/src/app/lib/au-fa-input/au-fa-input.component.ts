@@ -4,7 +4,7 @@ import {InputRefDirective} from "../common/input-ref.directive";
 @Component({
     selector: 'au-fa-input',
     templateUrl: './au-fa-input.component.html',
-    styleUrls: ['./au-fa-input.component.css']
+    styleUrls: ['./au-fa-input.component.css', './_au-fa-input-red-theme.scss']
 })
 export class AuFaInputComponent implements AfterContentInit {
 
