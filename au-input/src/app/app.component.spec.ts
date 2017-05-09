@@ -20,12 +20,8 @@ describe('AppComponent', () => {
   }));
 
 
-  it('should render a font-awesome email button', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.fa.icon.fa-envelope')).toBeTruthy();
-  }));
+
+
 
 
 });
