@@ -1,10 +1,10 @@
-import {Component, Input, OnInit, ContentChild, AfterContentInit, HostBinding, ViewEncapsulation} from '@angular/core';
+import {Component, Input, ContentChild, AfterContentInit, HostBinding, ViewEncapsulation} from '@angular/core';
 import {InputRefDirective} from "../common/input-ref.directive";
 
 @Component({
     selector: 'au-fa-input',
     templateUrl: './au-fa-input.component.html',
-    styleUrls: ['./au-fa-input.component.css', './_au-fa-input-red-theme.scss']
+    styleUrls: ['./au-fa-input.component.css']
 })
 export class AuFaInputComponent implements AfterContentInit {
 
@@ -13,9 +13,6 @@ export class AuFaInputComponent implements AfterContentInit {
 
     @ContentChild(InputRefDirective)
     input: InputRefDirective;
-
-    constructor() {
-    }
 
     ngAfterContentInit() {
         if (!this.input) {

@@ -1,6 +1,6 @@
 
 @import "../common/common.css";
 
-@import "au-fa-input-default-theme.css";
+@import "../common/_default-theme.scss";
 
 @import "_au-fa-input-red-theme.scss";
