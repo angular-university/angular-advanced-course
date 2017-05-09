@@ -11,7 +11,7 @@ import { AuMdInputComponent } from './au-md-input/au-md-input.component';
     imports: [
         CommonModule
     ],
-    exports: [AuFaInputComponent, InputRefDirective]
+    exports: [AuFaInputComponent, AuMdInputComponent, InputRefDirective]
 })
 export class AuInputModule { }
 

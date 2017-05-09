@@ -3,3 +3,8 @@
 
 @import "../common/_default-theme.scss";
 
+.md-icon {
+    line-height: 21px;
+    vertical-align: middle;
+}
+
