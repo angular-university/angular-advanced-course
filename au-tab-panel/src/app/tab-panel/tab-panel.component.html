@@ -1,10 +1,16 @@
-<div class="tab-panel">
+
+<ng-template #defaultTabsHeader let-tabs="tabs">
 
   <ul class="tab-panel-buttons" *ngIf="tabs">
     <li *ngFor="let tab of tabs">{{tab.title}}</li>
   </ul>
 
+</ng-template>
 
 
+
+<div class="tab-panel">
+
+  <ng-container *ngTemplateOutlet="headerTemplate ? headerTemplate : defaultTabsHeader; context: tabsContext"></ng-container>
 
 </div>

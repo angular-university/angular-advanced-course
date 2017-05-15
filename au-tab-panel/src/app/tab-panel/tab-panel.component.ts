@@ -1,4 +1,4 @@
-import {Component, ContentChildren, OnInit, QueryList} from '@angular/core';
+import {Component, ContentChildren, Input, OnInit, QueryList, TemplateRef} from '@angular/core';
 import {TabComponent} from "../tab/tab.component";
 
 @Component({
@@ -11,11 +11,24 @@ export class TabPanelComponent implements OnInit {
   @ContentChildren(TabComponent)
   tabs: QueryList<TabComponent>;
 
+  @Input()
+  headerTemplate: TemplateRef<any>;
 
-  constructor() { }
+
+
+  constructor() {
+
+
+  }
 
   ngOnInit() {
 
+  }
+
+  get tabsContext() {
+    return {
+      tabs: this.tabs
+    }
   }
 
 }
