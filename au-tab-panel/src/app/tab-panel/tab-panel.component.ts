@@ -14,17 +14,8 @@ export class TabPanelComponent implements AfterContentInit {
   @Input()
   headerTemplate: TemplateRef<any>;
 
-  @Input()
-  tabTemplate: TemplateRef<any>;
-
-
-  constructor() {
-
-
-  }
-
   ngAfterContentInit() {
-    //this.tabs.forEach(tab => tab.tabTemplate =  this.tabTemplate);
+    this.tabs.first.selected = true;
   }
 
   get tabsContext() {
@@ -32,5 +23,14 @@ export class TabPanelComponent implements AfterContentInit {
       tabs: this.tabs
     }
   }
+
+  selectTab(tab: TabComponent) {
+
+    this.tabs.forEach(tab => tab.selected = false);
+
+    tab.selected = true;
+
+  }
+
 
 }

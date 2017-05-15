@@ -10,6 +10,8 @@ export class TabComponent implements OnInit {
   @Input()
   title:string;
 
+  selected = false;
+
   constructor() {
 
 
