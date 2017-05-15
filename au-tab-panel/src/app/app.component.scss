@@ -1,14 +1,64 @@
 
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top:35px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+
+.form-field {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+input {
+  height: 20px;
+  border-radius: 2px;
+}
+
+input, textarea {
+  border: 1px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
 $primary: rgb(25, 118, 210);
 $secondary: rgba(0, 0, 0, 0.117647);
 $primary-tint-1: #3F94E9;
 $text:rgba(26, 35, 38, 0.8);
-
+$box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.14), 0 4px 8px -1px rgba(0, 0, 0, 0.12);
 
 
 .tab-panel {
 
   $tab-border: 1px solid $secondary;
+
+  box-shadow: $box-shadow;
 
   .tab-panel-buttons {
 
@@ -48,6 +98,7 @@ $text:rgba(26, 35, 38, 0.8);
     border-left: $tab-border;
     border-right: $tab-border;
     border-bottom: $tab-border;
+    padding: 15px 25px;
   }
 
 
