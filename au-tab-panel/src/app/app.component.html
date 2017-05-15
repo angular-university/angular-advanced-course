@@ -13,9 +13,16 @@
   </ng-template>
 
 
-  <au-tab-panel>
+  <ng-template #tab>
+    <div class="tab">
+      <ng-content></ng-content>
+    </div>
+  </ng-template>
 
-    <au-tab title="Login">
+
+  <au-tab-panel [tabTemplate]="tab">
+
+    <au-tab title="Login" [tabTemplate]="tab">
       <form>
         <div class="form-field">
           <label>Email:</label><input name="email">

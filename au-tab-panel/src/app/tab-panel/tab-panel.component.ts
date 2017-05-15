@@ -1,4 +1,4 @@
-import {Component, ContentChildren, Input, OnInit, QueryList, TemplateRef} from '@angular/core';
+import {Component, ContentChildren, Input, OnInit, QueryList, TemplateRef, AfterContentInit} from '@angular/core';
 import {TabComponent} from "../tab/tab.component";
 
 @Component({
@@ -6,7 +6,7 @@ import {TabComponent} from "../tab/tab.component";
   templateUrl: './tab-panel.component.html',
   styleUrls: ['./tab-panel.component.scss']
 })
-export class TabPanelComponent implements OnInit {
+export class TabPanelComponent implements AfterContentInit {
 
   @ContentChildren(TabComponent)
   tabs: QueryList<TabComponent>;
@@ -14,6 +14,8 @@ export class TabPanelComponent implements OnInit {
   @Input()
   headerTemplate: TemplateRef<any>;
 
+  @Input()
+  tabTemplate: TemplateRef<any>;
 
 
   constructor() {
@@ -21,8 +23,8 @@ export class TabPanelComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-
+  ngAfterContentInit() {
+    //this.tabs.forEach(tab => tab.tabTemplate =  this.tabTemplate);
   }
 
   get tabsContext() {

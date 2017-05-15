@@ -10,6 +10,9 @@ export class TabComponent implements OnInit {
   @Input()
   title:string;
 
+  @Input()
+  tabTemplate: TemplateRef<any>;
+
   constructor() {
 
 
