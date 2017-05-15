@@ -5,7 +5,15 @@
 
 <div class="container">
 
-  <au-tab-panel>
+
+  <ng-template #header let-tabs="tabs">
+    <ul>
+      <li *ngFor="let tab of tabs">{{tab.title}}</li>
+    </ul>
+  </ng-template>
+
+
+  <au-tab-panel [headerTemplate]="header">
 
     <au-tab title="Login">
       <form>
