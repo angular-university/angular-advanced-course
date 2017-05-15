@@ -1,14 +1,5 @@
+<div class="tab">
 
+  <ng-content></ng-content>
 
-<ng-template #defaultTab>
-  <div class="tab">
-
-    <ng-content></ng-content>
-
-  </div>
-</ng-template>
-
-
-
-<ng-container [ngTemplateOutlet]="tabTemplate ? tabTemplate : defaultTab"></ng-container>
-
+</div>

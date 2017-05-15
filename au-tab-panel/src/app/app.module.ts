@@ -19,6 +19,7 @@ import { TabComponent } from './tab/tab.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [TabComponent]
 })
 export class AppModule { }
