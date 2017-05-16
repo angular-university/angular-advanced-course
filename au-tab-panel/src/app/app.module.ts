@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AuTabPanelComponent } from './au-tab-panel/au-tab-panel.component';
+import { AuTabComponent } from './au-tab/au-tab.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuTabPanelComponent,
+    AuTabComponent
   ],
   imports: [
     BrowserModule,
