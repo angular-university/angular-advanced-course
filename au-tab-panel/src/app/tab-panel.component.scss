@@ -1,7 +1,6 @@
 
 
-@import "../common/theme";
-
+@import "./theme";
 
 
 .tab-panel {
@@ -39,6 +38,13 @@
 
     }
 
+  }
+
+  .tab {
+    border-left: $tab-border;
+    border-right: $tab-border;
+    border-bottom: $tab-border;
+    padding: 15px 25px;
   }
 
 

@@ -1,60 +1,65 @@
 <h2>
-  Tab Container
+    Tab Panel
 </h2>
 
 
 <div class="container">
 
+    <div class="tab-panel">
 
-  <ng-template #header let-tabs="tabs">
-    <ul>
-      <li *ngFor="let tab of tabs">{{tab.title}}</li>
-    </ul>
-  </ng-template>
+        <ul class="tab-panel-buttons">
+            <li class="selected">Login</li>
+            <li>Sign Up</li>
+            <li>Contact</li>
+        </ul>
 
-
-
-  <au-tab-panel>
-
-    <au-tab title="Login">
-      <form>
-        <div class="form-field">
-          <label>Email:</label><input name="email">
+        <div class="tab">
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input name="email">
+                </div>
+            </form>
         </div>
-        <div class="form-field">
-          <label>Password:</label><input>
-        </div>
-      </form>
-    </au-tab>
 
-    <au-tab title="Sign Up">
-      <form>
-        <div class="form-field">
-          <label>Email:</label><input>
-        </div>
-        <div class="form-field">
-          <label>Password:</label><input>
-        </div>
-        <div class="form-field">
-          <label>Confirm Password:</label><input>
-        </div>
-      </form>
-    </au-tab>
 
-    <au-tab title="Contact">
-      <form>
-        <div class="form-field">
-          <label>Email:</label><input>
+        <div class="tab">
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Password:</label><input>
+                </div>
+            </form>
         </div>
-        <div class="form-field">
-          <label>Message:</label>
-          <textarea></textarea>
+
+        <div class="tab">
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Password:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Confirm Password:</label><input>
+                </div>
+            </form>
         </div>
-      </form>
-    </au-tab>
 
-  </au-tab-panel>
+        <div class="tab">
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Message:</label>
+                    <textarea></textarea>
+                </div>
+            </form>
+        </div>
 
+    </div>
 
 
 </div>
