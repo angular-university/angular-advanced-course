@@ -1,7 +1,7 @@
 import {Directive, HostListener} from '@angular/core';
 
 @Directive({
-    selector: 'au-fa-input input'
+    selector: 'input'
 })
 export class InputRefDirective {
 
