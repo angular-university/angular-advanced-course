@@ -5,15 +5,9 @@
 
 <div class="container">
 
-    <div class="tab-panel">
+    <au-tab-panel>
 
-        <ul class="tab-panel-buttons">
-            <li class="selected">Login</li>
-            <li>Sign Up</li>
-            <li>Contact</li>
-        </ul>
-
-        <div class="tab">
+        <au-tab title="Login">
             <form>
                 <div class="form-field">
                     <label>Email:</label><input>
@@ -22,9 +16,9 @@
                     <label>Password:</label><input>
                 </div>
             </form>
-        </div>
+        </au-tab>
 
-        <div class="tab">
+        <au-tab title="Sign Up">
             <form>
                 <div class="form-field">
                     <label>Email:</label><input>
@@ -36,9 +30,9 @@
                     <label>Confirm Password:</label><input>
                 </div>
             </form>
-        </div>
+        </au-tab>
 
-        <div class="tab">
+        <au-tab title="Contact">
             <form>
                 <div class="form-field">
                     <label>Email:</label><input>
@@ -48,10 +42,9 @@
                     <textarea></textarea>
                 </div>
             </form>
-        </div>
+        </au-tab>
 
-    </div>
-
+    </au-tab-panel>
 
 </div>
 
