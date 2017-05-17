@@ -16,7 +16,14 @@ export class AuTabPanelComponent implements AfterContentInit {
     }
 
     ngAfterContentInit() {
-        console.log(this.tabs);
+
+        const selectedTab = this.tabs.find(tab => tab.selected);
+
+        if (!selectedTab) {
+            this.tabs.first.selected = true;
+        }
+
+
     }
 
 }
