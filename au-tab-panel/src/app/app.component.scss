@@ -1,0 +1,35 @@
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-top:15px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.form-field {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+input {
+  height: 20px;
+  border-radius: 2px;
+}
+
+input, textarea {
+  border: 1px solid grey;
+}
+
+

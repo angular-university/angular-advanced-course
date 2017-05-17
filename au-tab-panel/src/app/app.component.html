@@ -1,0 +1,59 @@
+<h2>
+    Tab Panel
+</h2>
+
+
+<div class="container">
+
+    <ng-template #headerButtons>
+
+        <button (click)="tabPanel.selectTab(loginTab)">Login</button>
+        <button (click)="tabPanel.selectTab(signUpTab)">Sign Up</button>
+
+    </ng-template>
+
+
+    <au-tab-panel #tabPanel>
+
+        <au-tab title="Login" #loginTab>
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Password:</label><input>
+                </div>
+            </form>
+        </au-tab>
+
+        <au-tab title="Sign Up" #signUpTab>
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Password:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Confirm Password:</label><input>
+                </div>
+            </form>
+        </au-tab>
+
+        <au-tab title="Contact">
+            <form>
+                <div class="form-field">
+                    <label>Email:</label><input>
+                </div>
+                <div class="form-field">
+                    <label>Message:</label>
+                    <textarea></textarea>
+                </div>
+            </form>
+        </au-tab>
+
+    </au-tab-panel>
+
+</div>
+
+
