@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 @Component({
     selector: 'au-tab',
@@ -10,10 +10,17 @@ export class AuTabComponent implements OnInit {
     @Input()
     title: string;
 
+    @Input()
+    selected = false;
+
     constructor() {
     }
 
     ngOnInit() {
+
+
     }
+
+
 
 }
