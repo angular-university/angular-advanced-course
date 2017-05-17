@@ -23,7 +23,6 @@ export class AuTabPanelComponent implements AfterContentInit {
             this.tabs.first.selected = true;
         }
 
-
     }
 
     selectTab(tab: AuTabComponent) {
@@ -31,7 +30,6 @@ export class AuTabPanelComponent implements AfterContentInit {
         this.tabs.forEach(tab => tab.selected = false);
 
         tab.selected = true;
-
 
     }
 
