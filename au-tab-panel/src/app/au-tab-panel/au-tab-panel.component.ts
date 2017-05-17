@@ -26,4 +26,13 @@ export class AuTabPanelComponent implements AfterContentInit {
 
     }
 
+    selectTab(tab: AuTabComponent) {
+
+        this.tabs.forEach(tab => tab.selected = false);
+
+        tab.selected = true;
+
+
+    }
+
 }
