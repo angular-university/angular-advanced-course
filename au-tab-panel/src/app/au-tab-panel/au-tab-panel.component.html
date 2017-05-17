@@ -1,7 +1,7 @@
 
 
 <ul class="tab-panel-buttons" *ngIf="tabs">
-    <li *ngFor="let tab of tabs">{{tab.title}}</li>
+    <li [ngClass]="{selected: tab.selected}" *ngFor="let tab of tabs">{{tab.title}}</li>
 </ul>
 
 
