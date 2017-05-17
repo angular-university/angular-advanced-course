@@ -8,7 +8,6 @@ import {AuTabComponent} from "../au-tab/au-tab.component";
 })
 export class AuTabPanelComponent implements AfterContentInit {
 
-
     @ContentChildren(AuTabComponent)
     tabs: QueryList<AuTabComponent>;
 
