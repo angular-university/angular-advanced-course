@@ -16,6 +16,8 @@ export class AuModalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }

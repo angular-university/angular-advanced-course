@@ -59,7 +59,25 @@
     </au-tab-panel>
   </ng-template>
 
-  <au-modal [body]="authModalBody" [context]="context">
+
+
+  <!--au-modal [body]="authModalBody" [context]="context" *ngIf="true" *ngModalOpen="">
+
+  </au-modal -->
+
+
+  <!--ng-template [auModalOpenOnClick]="loginButton">
+
+    <au-modal [body]="authModalBody" [context]="context">
+
+    </au-modal>
+
+  </ng-template -->
+
+
+
+
+  <au-modal [body]="authModalBody" [context]="context" *auModalOpenOnClick="[loginButton, signUpButton]">
 
   </au-modal>
 
@@ -67,9 +85,9 @@
 
   <div class="modal-buttons">
 
-    <button (click)="setLoginMode(true)">Login</button>
+    <button (click)="setLoginMode(true)" #loginButton>Login</button>
 
-    <button (click)="setLoginMode(false)">Sign Up</button>
+    <button (click)="setLoginMode(false)" #signUpButton>Sign Up</button>
 
   </div>
 
