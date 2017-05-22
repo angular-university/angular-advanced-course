@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appAuModalOpen]'
+  selector: '[auModalOpen]'
 })
 export class AuModalOpenDirective {
 
