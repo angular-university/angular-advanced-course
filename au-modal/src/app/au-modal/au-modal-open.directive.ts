@@ -1,15 +1,22 @@
-import {Directive, TemplateRef, ViewContainerRef, Input} from '@angular/core';
-
+import {Directive, TemplateRef, ViewContainerRef, Input, OnInit} from '@angular/core';
+import {AuModalService} from "./au-modal.service";
 
 
 @Directive({
   selector: '[auModalOpenOnClick]'
 })
-export class AuModalOpenDirective {
+export class AuModalOpenDirective implements OnInit {
 
   constructor(private templateRef: TemplateRef<any>,
-              private viewContainer: ViewContainerRef) {
+              private viewContainer: ViewContainerRef,
+              private modalService: AuModalService) {
 
+
+  }
+
+  ngOnInit() {
+
+    this.modalService.close$.subscribe(() => this.viewContainer.clear());
 
   }
 

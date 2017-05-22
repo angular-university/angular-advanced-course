@@ -1,4 +1,5 @@
-import {Component, OnInit, TemplateRef, Input} from '@angular/core';
+import {Component, OnInit, TemplateRef, Input, EventEmitter, Output} from '@angular/core';
+import {AuModalService} from "./au-modal.service";
 
 @Component({
   selector: 'au-modal',
@@ -13,7 +14,10 @@ export class AuModalComponent implements OnInit {
   @Input()
   context: any;
 
-  constructor() {
+  @Output()
+  close = new EventEmitter<any>();
+
+  constructor(private modalService: AuModalService) {
 
   }
 
@@ -27,6 +31,8 @@ export class AuModalComponent implements OnInit {
 
   closeModal() {
     console.log('closing ');
+    this.close.emit();
+    this.modalService.close();
   }
 
 }

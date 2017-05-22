@@ -4,23 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AuModalComponent } from './au-modal/au-modal.component';
-import { AuModalOpenDirective } from './au-modal/au-modal-open.directive';
 import {AuInputModule} from 'au-input';
 import {AuTabPanelModule} from "au-tab-panel";
+import {AuModalModule} from "./au-modal/au-modal.module";
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AuModalComponent,
-    AuModalOpenDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AuInputModule,
-    AuTabPanelModule
+    AuTabPanelModule,
+    AuModalModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
