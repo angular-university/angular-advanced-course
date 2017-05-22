@@ -16,6 +16,14 @@ label {
   margin-bottom: 10px;
 }
 
+.form-field {
+  margin-bottom: 5px;
+}
+
+.form-field input {
+
+}
+
 
 input {
   height: 25px;

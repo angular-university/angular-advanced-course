@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AuModalComponent } from './au-modal/au-modal.component';
 import { AuModalOpenDirective } from './au-modal/au-modal-open.directive';
 import {AuInputModule} from 'au-input';
+import {AuTabPanelModule} from "au-tab-panel";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {AuInputModule} from 'au-input';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AuInputModule
+    AuInputModule,
+    AuTabPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,71 +20,51 @@
   <h1>Modal Example</h1>
 
 
-  <ng-template #modalBody>
+  <au-tab-panel>
+    <au-tab title="Login">
+      <form>
+        <div class="form-field">
+          <au-fa-input id="email-field" icon="envelope">
+            <input type="email" name="email" placeholder="Email" autocomplete="off">
+          </au-fa-input>
+        </div>
+        <div class="form-field">
+          <au-fa-input icon="lock">
+            <input type="password" name="email" placeholder="Password" autocomplete="off">
+          </au-fa-input>
 
-    <div class="form">
+        </div>
+      </form>
+    </au-tab>
 
-      <div class="form-row">
-        <label>Normal Input:</label>
-        <input class="normal-input" type="email"
-               name="email" placeholder="E-mail" autocomplete="off">
-      </div>
+    <au-tab title="Sign Up">
+      <form>
+        <div class="form-field">
+          <au-fa-input icon="envelope">
+            <input type="email" name="email" placeholder="Email" autocomplete="off">
+          </au-fa-input>
+        </div>
+        <div class="form-field">
+          <au-fa-input icon="lock">
+            <input type="password" name="email" placeholder="Password" autocomplete="off">
+          </au-fa-input>
+        </div>
+        <div class="form-field">
+          <au-fa-input icon="lock">
+            <input type="password" name="email" placeholder="Confirm Password" autocomplete="off">
+          </au-fa-input>
+        </div>
+      </form>
+    </au-tab>
 
-      <div class="form-row">
-        <label>Email:</label>
-
-        <au-fa-input id="email-field" icon="envelope">
-          <input type="email" name="email" placeholder="Email" autocomplete="off" class="test-class">
-        </au-fa-input>
-
-      </div>
-
-      <div class="form-row">
-        <label>Password:</label>
-        <au-fa-input id="password-field" icon="lock">
-          <input placeholder="Password" class="test-class">
-        </au-fa-input>
-      </div>
-
-      <div class="form-row stripe-field">
-        <label>Stripe:</label>
-        <au-fa-input icon="cc-stripe">
-          <input placeholder="Stripe">
-        </au-fa-input>
-      </div>
-
-      <div class="form-row">
-        <label>Paypal:</label>
-        <au-fa-input icon="paypal">
-          <input placeholder="Paypal">
-        </au-fa-input>
-      </div>
-
-      <h1>Material Design</h1>
-
-      <div class="form-row">
-        <label>Lock:</label>
-        <au-md-input icon="search">
-          <input type="email" name="email" placeholder="E-mail">
-        </au-md-input>
-      </div>
-
-      <div class="form-row">
-        <label>Id Number:</label>
-        <au-md-input icon="perm_identity">
-          <input type="email" name="email" placeholder="E-mail">
-        </au-md-input>
-      </div>
-
-      <div class="form-row">
-        <label>Receipt Number:</label>
-        <au-md-input icon="receipt">
-          <input type="email" name="email" placeholder="E-mail">
-        </au-md-input>
-      </div>
+  </au-tab-panel>
 
 
-    </div>
+  <!--ng-template #modalBody>
+
+
+
+
 
   </ng-template>
 
@@ -98,7 +78,7 @@
   </au-modal>
 
 
-  <button auModalOpen>Show Modal</button>
+  <button auModalOpen>Show Modal</button-->
 
 
 </div>
