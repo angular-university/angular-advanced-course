@@ -3,6 +3,7 @@
 :host {
   box-shadow: $box-shadow;
   display: block;
+  border-radius:  $border-radius;
 }
 
 .tab-panel-buttons {
@@ -10,10 +11,11 @@
   list-style: none;
   text-align: left;
   margin-bottom: 0;
+  margin-top: 0;
   padding: 7px 0 0 10px;
   background: $primary;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
 
 }
 
@@ -24,8 +26,8 @@
   background: $primary-tint-1;
   padding: 2px 20px;
   cursor: pointer;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
   border-top: $tab-border;
   border-left: $tab-border;
   border-right: $tab-border;
