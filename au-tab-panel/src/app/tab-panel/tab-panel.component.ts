@@ -14,8 +14,18 @@ export class TabPanelComponent implements AfterContentInit {
   @Input()
   headerTemplate: TemplateRef<any>;
 
+
   ngAfterContentInit() {
-    this.tabs.first.selected = true;
+
+    if (this.tabs.first) {
+
+      const isTabSelected = this.tabs.find(tab => tab.selected);
+
+      if (!isTabSelected) {
+        this.tabs.first.selected = true;
+      }
+
+    }
   }
 
   get tabsContext() {

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, TemplateRef} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'au-tab',
@@ -10,6 +10,7 @@ export class TabComponent implements OnInit {
   @Input()
   title:string;
 
+  @Input()
   selected = false;
 
   constructor() {

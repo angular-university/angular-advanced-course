@@ -17,69 +17,50 @@
 
 <body>
 <div class="container">
+
   <h1>Modal Example</h1>
 
-
-  <au-tab-panel>
-    <au-tab title="Login">
-      <form>
-        <div class="form-field">
-          <au-fa-input id="email-field" icon="envelope">
-            <input type="email" name="email" placeholder="Email" autocomplete="off">
-          </au-fa-input>
-        </div>
-        <div class="form-field">
-          <au-fa-input icon="lock">
-            <input type="password" name="email" placeholder="Password" autocomplete="off">
-          </au-fa-input>
-
-        </div>
-      </form>
-    </au-tab>
-
-    <au-tab title="Sign Up">
-      <form>
-        <div class="form-field">
-          <au-fa-input icon="envelope">
-            <input type="email" name="email" placeholder="Email" autocomplete="off">
-          </au-fa-input>
-        </div>
-        <div class="form-field">
-          <au-fa-input icon="lock">
-            <input type="password" name="email" placeholder="Password" autocomplete="off">
-          </au-fa-input>
-        </div>
-        <div class="form-field">
-          <au-fa-input icon="lock">
-            <input type="password" name="email" placeholder="Confirm Password" autocomplete="off">
-          </au-fa-input>
-        </div>
-      </form>
-    </au-tab>
-
-  </au-tab-panel>
-
-
-  <!--ng-template #modalBody>
-
-
-
-
-
+  <ng-template #loginModalBody>
+    <au-tab-panel>
+      <au-tab title="Login" [selected]="login">
+        <form>
+          <div class="form-field">
+            <au-fa-input id="email-field" icon="envelope">
+              <input type="email" name="email" placeholder="Email" autocomplete="off">
+            </au-fa-input>
+          </div>
+          <div class="form-field">
+            <au-fa-input icon="lock">
+              <input type="password" name="email" placeholder="Password" autocomplete="off">
+            </au-fa-input>
+          </div>
+        </form>
+      </au-tab>
+      <au-tab title="Sign Up" [selected]="!login">
+        <form>
+          <div class="form-field">
+            <au-fa-input icon="envelope">
+              <input type="email" name="email" placeholder="Email" autocomplete="off">
+            </au-fa-input>
+          </div>
+          <div class="form-field">
+            <au-fa-input icon="lock">
+              <input type="password" name="email" placeholder="Password" autocomplete="off">
+            </au-fa-input>
+          </div>
+          <div class="form-field">
+            <au-fa-input icon="lock">
+              <input type="password" name="email" placeholder="Confirm Password" autocomplete="off">
+            </au-fa-input>
+          </div>
+        </form>
+      </au-tab>
+    </au-tab-panel>
   </ng-template>
 
+  <button>Login</button>
 
-  <au-modal [body]="modalBody">
-
-    <div class="modal-header">
-      Custom Modal Header
-    </div>
-
-  </au-modal>
-
-
-  <button auModalOpen>Show Modal</button-->
-
+  <button>Sign Up</button>
 
 </div>
 
