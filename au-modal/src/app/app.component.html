@@ -20,18 +20,19 @@
 
   <h1>Modal Example</h1>
 
-  <ng-template #loginModalBody>
+  <ng-template #authModalBody let-login="login">
+
     <au-tab-panel>
       <au-tab title="Login" [selected]="login">
         <form>
           <div class="form-field">
             <au-fa-input id="email-field" icon="envelope">
-              <input type="email" name="email" placeholder="Email" autocomplete="off">
+              <input auInput type="email" name="email" placeholder="Email" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input type="password" name="email" placeholder="Password" autocomplete="off">
+              <input auInput type="password" name="email" placeholder="Password" autocomplete="off">
             </au-fa-input>
           </div>
         </form>
@@ -40,17 +41,17 @@
         <form>
           <div class="form-field">
             <au-fa-input icon="envelope">
-              <input type="email" name="email" placeholder="Email" autocomplete="off">
+              <input auInput type="email" name="email" placeholder="Email" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input type="password" name="email" placeholder="Password" autocomplete="off">
+              <input auInput type="password" name="email" placeholder="Password" autocomplete="off">
             </au-fa-input>
           </div>
           <div class="form-field">
             <au-fa-input icon="lock">
-              <input type="password" name="email" placeholder="Confirm Password" autocomplete="off">
+              <input auInput type="password" name="email" placeholder="Confirm Password" autocomplete="off">
             </au-fa-input>
           </div>
         </form>
@@ -58,9 +59,19 @@
     </au-tab-panel>
   </ng-template>
 
-  <button>Login</button>
+  <au-modal [body]="authModalBody" [context]="{login:false}">
 
-  <button>Sign Up</button>
+  </au-modal>
+
+
+
+  <div class="modal-buttons">
+
+    <button>Login</button>
+
+    <button>Sign Up</button>
+
+  </div>
 
 </div>
 

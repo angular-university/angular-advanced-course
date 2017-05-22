@@ -7,12 +7,14 @@
 .tab-panel {
 
   box-shadow: $box-shadow;
+  background: $background;
 
   .tab-panel-buttons {
 
     list-style: none;
     text-align: left;
     margin-bottom: 0;
+    margin-top: 0;
     padding: 7px 0 0 10px;
     background: $primary;
     border-top-left-radius: 4px;
