@@ -8,16 +8,25 @@ import {Component, OnInit, TemplateRef, Input} from '@angular/core';
 export class AuModalComponent implements OnInit {
 
   @Input()
-  body:TemplateRef<any>;
+  body: TemplateRef<any>;
 
   @Input()
-  context:any;
+  context: any;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
 
+  }
 
+  cancelClick($event: KeyboardEvent) {
+    $event.stopPropagation();
+  }
+
+  closeModal() {
+    console.log('closing ');
   }
 
 }

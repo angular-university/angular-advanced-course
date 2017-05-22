@@ -1,7 +1,13 @@
 
-<div class="modal-body">
-  <ng-container *ngTemplateOutlet="body;context: context"></ng-container>
+<div class="modal-overlay" (click)="closeModal()">
+
+  <div class="modal-body" (click)="cancelClick($event)">
+    <ng-container *ngTemplateOutlet="body;context: context"></ng-container>
+  </div>
+
+
 </div>
+
 
 
 
