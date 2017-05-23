@@ -7,10 +7,6 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  context: any = {login:false};
 
-  setLoginMode(login: boolean) {
-    this.context = {login};
-  }
 
 }

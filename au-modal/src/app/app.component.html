@@ -18,76 +18,20 @@
 <body>
 <div class="container">
 
-  <h1>Modal Example</h1>
-
-  <ng-template #authModalBody let-login="login">
-
-    <au-tab-panel>
-      <au-tab title="Login" [selected]="login">
-        <form>
-          <div class="form-field">
-            <au-fa-input id="email-field" icon="envelope">
-              <input auInput type="email" name="email" placeholder="Email" autocomplete="off">
-            </au-fa-input>
-          </div>
-          <div class="form-field">
-            <au-fa-input icon="lock">
-              <input auInput type="password" name="email" placeholder="Password" autocomplete="off">
-            </au-fa-input>
-          </div>
-        </form>
-      </au-tab>
-      <au-tab title="Sign Up" [selected]="!login">
-        <form>
-          <div class="form-field">
-            <au-fa-input icon="envelope">
-              <input auInput type="email" name="email" placeholder="Email" autocomplete="off">
-            </au-fa-input>
-          </div>
-          <div class="form-field">
-            <au-fa-input icon="lock">
-              <input auInput type="password" name="email" placeholder="Password" autocomplete="off">
-            </au-fa-input>
-          </div>
-          <div class="form-field">
-            <au-fa-input icon="lock">
-              <input auInput type="password" name="email" placeholder="Confirm Password" autocomplete="off">
-            </au-fa-input>
-          </div>
-        </form>
-      </au-tab>
-    </au-tab-panel>
-  </ng-template>
-
-
-
-  <!--au-modal [body]="authModalBody" [context]="context" *ngIf="true" *ngModalOpen="">
-
-  </au-modal -->
-
-
-  <!--ng-template [auModalOpenOnClick]="loginButton">
-
-    <au-modal [body]="authModalBody" [context]="context">
-
-    </au-modal>
-
-  </ng-template -->
+  <h1>Modal Examples</h1>
 
 
 
 
-  <au-modal [body]="authModalBody" [context]="context" *auModalOpenOnClick="[loginButton, signUpButton]">
 
-  </au-modal>
 
 
 
   <div class="modal-buttons">
 
-    <button (click)="setLoginMode(true)" #loginButton>Login</button>
+    <button #loginButton>Login</button>
 
-    <button (click)="setLoginMode(false)" #signUpButton>Sign Up</button>
+    <button #signUpButton>Sign Up</button>
 
   </div>
 
