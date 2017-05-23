@@ -1,29 +1,29 @@
 
-@import "au-modal/au-modal.component.scss";
-
 .container {
-  margin: 0 auto;
-  max-width: 300px;
-  padding-top:65px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 65px;
 }
 
+/deep/ .auth-modal .modal-body {
+    min-width: 300px;
+}
+
+
 label {
-  width: 100px;
-  text-align: right;
+    width: 100px;
+    text-align: right;
 }
 
 .form-row {
-  width:500px;
-  margin-bottom: 10px;
+    width: 500px;
+    margin-bottom: 10px;
 }
 
 .form-field {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-.form-field input {
-
-}
 
 
 input {
@@ -31,18 +31,17 @@ input {
 }
 
 .normal-input {
-  width:150px;
+    width: 150px;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
-
 .modal-buttons {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 
