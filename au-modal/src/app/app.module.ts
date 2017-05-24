@@ -19,7 +19,7 @@ import {AuModalModule} from "./au-modal/au-modal.module";
     HttpModule,
     AuInputModule,
     AuTabPanelModule,
-    AuModalModule
+    AuModalModule.forRoot()
 
   ],
   providers: [],
