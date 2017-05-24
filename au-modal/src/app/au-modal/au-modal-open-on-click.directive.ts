@@ -1,9 +1,13 @@
-import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
+import {AfterContentInit, ContentChild, Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
+import {AuModalComponent} from "./au-modal.component";
 
 @Directive({
     selector: '[auModalOpenOnClick]'
 })
-export class AuModalOpenOnClickDirective {
+export class AuModalOpenOnClickDirective  {
+
+
+
 
     constructor(private templateRef: TemplateRef<any>,
                 private viewContainer: ViewContainerRef) {
