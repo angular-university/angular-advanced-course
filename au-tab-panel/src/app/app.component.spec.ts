@@ -1,52 +1,82 @@
-import { TestBed, async } from '@angular/core/testing';
-import {TestBed, async, ComponentFixture} from '@angular/core/testing';
+import {TestBed, async} from '@angular/core/testing';
+import {ComponentFixture} from '@angular/core/testing';
 import {DebugElement} from '@angular/core';
 import {By}              from '@angular/platform-browser';
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {TabPanelComponent} from "./tab-panel/tab-panel.component";
 import {TabComponent} from "./tab/tab.component";
 
 
 describe('AppComponent', () => {
 
-  let component: AppComponent,
-    fixture: ComponentFixture<AppComponent>,
-    el: DebugElement,
-    emailField: DebugElement;
+    let component: AppComponent,
+        fixture: ComponentFixture<AppComponent>,
+        el: DebugElement,
+        tabPanel: DebugElement;
 
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent, TabPanelComponent, TabComponent
-      ],
-    }).compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [
+                AppComponent, TabPanelComponent, TabComponent
+            ],
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
+    beforeEach(() => {
 
-    fixture = TestBed.createComponent(AppComponent);
-    component = fixture.debugElement.componentInstance;
-    el = fixture.debugElement;
-    emailField = el.query(By.css('#email-field'));
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.debugElement.componentInstance;
+        el = fixture.debugElement;
+        tabPanel = el.query(By.css('#tab-panel'));
 
-    fixture.detectChanges();
+        fixture.detectChanges();
 
-  });
-
-
-  it('should create the test application', async(() => {
-    expect(component).toBeTruthy();
-  }));
+    });
 
 
-  it('should include the correct email icon inside the email input', async(() => {
+    it('should create the test application', async(() => {
+        expect(component).toBeTruthy();
+    }));
 
-    const tabs = emailField.queryAll(By.css('au-tab-pane .tab'));
+    it('should find only one tab inside the tab container', async(() => {
 
-    //TODO expect(tabs).toBeTruthy();
-    //TODO expect(tabs.length).toBe(1);
-  }));
+        const tabs = tabPanel.queryAll(By.css('.tab'));
+
+        expect(tabs).toBeTruthy();
+        expect(tabs.length).toBe(1);
+    }));
+
+    it('should find the Contact tab button marked as active', async(() => {
+
+        const selectedButton = tabPanel.query(By.css('.tab-panel-buttons li.selected')).nativeElement;
+
+        expect(selectedButton).toBeTruthy();
+        expect(selectedButton.textContent).toBe("Contact");
+    }));
+
+    it('should display the Contacts tab', async(() => {
+
+        const contactEmail = tabPanel.query(By.css('.contact-email'));
+        expect(contactEmail).toBeTruthy();
+    }));
+
+
+    it('should switch to the Login Tab', async(() => {
+
+        const tabButtons = tabPanel.queryAll(By.css('.tab-panel-buttons li'));
+
+        tabButtons[0].triggerEventHandler('click',null);
+
+        fixture.detectChanges();
+
+        const contactEmail = tabPanel.query(By.css('.login-email'));
+        expect(contactEmail).toBeTruthy();
+
+        const selectedButton = tabPanel.query(By.css('.tab-panel-buttons li.selected')).nativeElement;
+        expect(selectedButton.textContent).toBe("Login");
+
+    }));
 
 
 

@@ -11,12 +11,12 @@
     </ul>
   </ng-template>
 
-  <au-tab-panel>
+  <au-tab-panel id="tab-panel">
 
     <au-tab title="Login">
       <form>
         <div class="form-field">
-          <label>Email:</label><input name="email">
+          <label>Email:</label><input name="email" class="login-email">
         </div>
         <div class="form-field">
           <label>Password:</label><input>
@@ -41,7 +41,7 @@
     <au-tab title="Contact" [selected]="true">
       <form>
         <div class="form-field">
-          <label>Email:</label><input>
+          <label>Email:</label><input class="contact-email">
         </div>
         <div class="form-field">
           <label>Message:</label>
