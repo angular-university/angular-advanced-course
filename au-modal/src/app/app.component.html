@@ -77,12 +77,23 @@
     </au-modal>
 
 
+    <au-modal id="testModal" *auModalOpenOnClick="testButton">
+
+        <form>
+            <label>Email:</label><input placeholder="Email" type="email">
+        </form>
+
+
+    </au-modal>
+
 
   <div class="modal-buttons">
 
     <button #loginButton>Login</button>
 
     <button #signUpButton>Sign Up</button>
+
+  <button #testButton id="testButton">Test Modal</button>
 
   </div>
 
