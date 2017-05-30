@@ -2,6 +2,7 @@
 
     <div class="modal-body" (click)="cancelClick($event)">
 
+        <ng-content select="i"></ng-content>
 
         <ng-container *ngIf="body else projectContent">
 
