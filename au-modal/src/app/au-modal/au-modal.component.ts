@@ -13,6 +13,9 @@ export class AuModalComponent implements OnInit {
     body: TemplateRef<any>;
 
     @Input()
+    context:any;
+
+    @Input()
     hideOnClickOutside = true;
 
     @Input()

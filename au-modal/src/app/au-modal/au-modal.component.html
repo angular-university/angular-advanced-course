@@ -6,7 +6,7 @@
 
         <ng-container *ngIf="body else projectContent">
 
-            <ng-container *ngTemplateOutlet="body"></ng-container>
+            <ng-container *ngTemplateOutlet="body;context: context"></ng-container>
 
         </ng-container>
 

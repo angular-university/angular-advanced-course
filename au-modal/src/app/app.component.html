@@ -20,7 +20,9 @@
 
   <h1>Modal Examples</h1>
 
-    <ng-template #authModalBody>
+    <ng-template #authModalBody let-title="title">
+
+        <h5>{{title}}</h5>
 
         <au-tab-panel>
             <au-tab title="Login">
@@ -67,6 +69,7 @@
 
 
     <au-modal #modal [hideOnClickOutside]="false" [hideOnEscape]="false" class="auth-modal" [body]="authModalBody"
+              [context]="{title: 'Login Or Sign Up'}"
               *auModalOpenOnClick="[loginButton, signUpButton]">
 
         <i (click)="modal.close()" class="close-icon fa fa-times"></i>
