@@ -39,6 +39,7 @@ describe('AppComponent', () => {
         expect(component).toBeTruthy();
     }));
 
+
     it('should find only one tab inside the tab container', async(() => {
 
         const tabs = tabPanel.queryAll(By.css('.tab'));
@@ -47,18 +48,24 @@ describe('AppComponent', () => {
         expect(tabs.length).toBe(1);
     }));
 
+
     it('should find the Contact tab button marked as active', async(() => {
 
-        const selectedButton = tabPanel.query(By.css('.tab-panel-buttons li.selected')).nativeElement;
+        const selectedButton = tabPanel.query(
+            By.css('.tab-panel-buttons li.selected')).nativeElement;
 
         expect(selectedButton).toBeTruthy();
         expect(selectedButton.textContent).toBe("Contact");
+
     }));
+
 
     it('should display the Contacts tab', async(() => {
 
         const contactEmail = tabPanel.query(By.css('.contact-email'));
+
         expect(contactEmail).toBeTruthy();
+
     }));
 
 
@@ -66,19 +73,39 @@ describe('AppComponent', () => {
 
         const tabButtons = tabPanel.queryAll(By.css('.tab-panel-buttons li'));
 
-        tabButtons[0].triggerEventHandler('click',null);
+        tabButtons[0].nativeElement.click();
 
         fixture.detectChanges();
 
-        const contactEmail = tabPanel.query(By.css('.login-email'));
-        expect(contactEmail).toBeTruthy();
+        const loginEmail = tabPanel.query(By.css('.login-email'));
+        expect(loginEmail).toBeTruthy();
 
-        const selectedButton = tabPanel.query(By.css('.tab-panel-buttons li.selected')).nativeElement;
+        const selectedButton = tabPanel.query(
+            By.css('.tab-panel-buttons li.selected')).nativeElement;
+
+        expect(selectedButton).toBeTruthy();
         expect(selectedButton.textContent).toBe("Login");
+
 
     }));
 
 
 
-
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
