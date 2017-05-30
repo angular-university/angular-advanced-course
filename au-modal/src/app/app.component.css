@@ -1,0 +1,59 @@
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 65px;
+}
+
+/deep/ .auth-modal .modal-body {
+    min-width: 300px;
+}
+
+
+label {
+    width: 100px;
+    text-align: right;
+}
+
+.form-row {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.form-field {
+    margin-bottom: 5px;
+}
+
+
+
+input /deep/ {
+  max-width: 120px;
+}
+
+.normal-input {
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
