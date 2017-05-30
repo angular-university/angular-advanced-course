@@ -26,8 +26,8 @@ label {
 
 
 
-input {
-  height: 25px;
+input /deep/ {
+  max-width: 120px;
 }
 
 .normal-input {
