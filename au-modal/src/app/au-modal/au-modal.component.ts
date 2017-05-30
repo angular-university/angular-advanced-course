@@ -12,34 +12,16 @@ export class AuModalComponent implements OnInit {
     @Input()
     body: TemplateRef<any>;
 
-    @Input()
-    context:any;
 
-    @Input()
-    hideOnClickOutside = true;
+    constructor(private modalService: AuModalService) {
 
-    @Input()
-    hideOnEscape = true;
-
-
-    constructor(private modalService: AuModalService, private eventManager: EventManager) {
-        this.eventManager.addGlobalEventListener('window', 'keyup.esc', () => {
-            if (this.hideOnEscape) {
-                this.close();
-            }
-        });
     }
 
     ngOnInit() {
     }
 
-    onClickOutsideModal() {
-        if (this.hideOnClickOutside) {
-            this.close();
-        }
-    }
 
-    close() {
+    closeModal() {
         this.modalService.close();
     }
 

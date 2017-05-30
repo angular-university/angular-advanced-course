@@ -20,9 +20,7 @@
 
   <h1>Modal Examples</h1>
 
-    <ng-template #authModalBody let-title="title">
-
-        <h5>{{title}}</h5>
+    <ng-template #authModalBody>
 
         <au-tab-panel>
             <au-tab title="Login">
@@ -68,23 +66,12 @@
     </ng-template>
 
 
-    <au-modal #modal [hideOnClickOutside]="false" [hideOnEscape]="false" class="auth-modal" [body]="authModalBody"
-              [context]="{title: 'Login Or Sign Up'}"
+    <au-modal [body]="authModalBody"
               *auModalOpenOnClick="[loginButton, signUpButton]">
 
-        <i (click)="modal.close()" class="close-icon fa fa-times"></i>
-
     </au-modal>
 
 
-    <au-modal id="testModal" *auModalOpenOnClick="testButton">
-
-        <form>
-            <label>Email:</label><input placeholder="Email" type="email">
-        </form>
-
-
-    </au-modal>
 
 
   <div class="modal-buttons">
@@ -92,8 +79,6 @@
     <button #loginButton>Login</button>
 
     <button #signUpButton>Sign Up</button>
-
-  <button #testButton id="testButton">Test Modal</button>
 
   </div>
 

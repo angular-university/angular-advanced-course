@@ -1,14 +1,21 @@
-import {AfterContentInit, ContentChild, Directive, Input, OnInit, TemplateRef, ViewContainerRef, OnDestroy} from '@angular/core';
+import {
+    AfterContentInit,
+    ContentChild,
+    Directive,
+    Input,
+    OnInit,
+    TemplateRef,
+    ViewContainerRef,
+    OnDestroy
+} from '@angular/core';
 import {AuModalComponent} from "./au-modal.component";
 import {AuModalService} from "./modal.service";
 
 @Directive({
     selector: '[auModalOpenOnClick]'
 })
-export class AuModalOpenOnClickDirective implements OnInit, OnDestroy {
+export class AuModalOpenOnClickDirective implements OnInit {
 
-
-    elements: HTMLBaseElement[];
 
     constructor(private templateRef: TemplateRef<any>,
                 private viewContainer: ViewContainerRef,
@@ -22,28 +29,25 @@ export class AuModalOpenOnClickDirective implements OnInit, OnDestroy {
 
     }
 
-    ngOnDestroy() {
-        this.elements.forEach(el => el.removeEventListener('click', this.clickHandler) );
-    }
 
     @Input()
     set auModalOpenOnClick(els) {
 
+        let elements: HTMLBaseElement[];
+
         if (els.length) {
-            this.elements = els;
+            elements = els;
         }
         else {
-            this.elements = [els];
+            elements = [els];
         }
 
-        this.elements.forEach(el =>  el.addEventListener('click', this.clickHandler));
+        elements.forEach(el => el.addEventListener('click', () => {
+            this.viewContainer.clear();
+            this.viewContainer.createEmbeddedView(this.templateRef);
+        }));
     }
 
-
-    clickHandler = (()  =>  {
-        this.viewContainer.clear();
-        this.viewContainer.createEmbeddedView(this.templateRef);
-    }).bind(this);
 
 }
 
