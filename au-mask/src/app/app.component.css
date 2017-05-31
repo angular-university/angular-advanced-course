@@ -2,7 +2,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 350px;
     padding-top:65px;
 }
 
@@ -16,9 +16,9 @@ input {
     border-radius: 4px;
     height: 30px;
     line-height: 30px;
-    font-size: 23px;
+    font-size: 17px;
     font-family: "Courier", serif;
-    width:410px;
+    width:310px;
     margin-bottom: 30px;
     border: 2px solid darkgray;
     padding: 5px 10px 5px 10px;
