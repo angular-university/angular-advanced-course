@@ -3,8 +3,6 @@ import {ComponentFixture} from '@angular/core/testing';
 import {DebugElement} from '@angular/core';
 import {By}              from '@angular/platform-browser';
 import {AppComponent} from './app.component';
-import {AuModalOpenOnClickDirective} from "./au-modal/au-modal-open-on-click.directive";
-import {AuModalComponent} from "./au-modal/au-modal.component";
 import {AuInputModule} from "au-input";
 import {AuTabPanelModule} from "au-tab-panel";
 import {AuModalModule} from "./au-modal/au-modal.module";
