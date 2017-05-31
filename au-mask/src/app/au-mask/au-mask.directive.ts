@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Input, OnInit} from '@angular/core';
+import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import * as includes from 'lodash.includes';
 import {SPECIAL_CHARACTERS} from "./mask.utils";
@@ -22,6 +22,13 @@ export class AuMaskDirective implements OnInit {
     ngOnInit() {
 
         this.input.value = this.buildPlaceHolder();
+
+    }
+
+    @HostListener("keydown", ['$event', '$event.keyCode'])
+    onKeyDown($event: KeyboardEvent, keyCode) {
+
+        $event.preventDefault();
 
     }
 
