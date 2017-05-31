@@ -1,7 +1,7 @@
 import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import * as includes from 'lodash.includes';
-import {SPECIAL_CHARACTERS} from "./mask.utils";
+import {SPECIAL_CHARACTERS, TAB} from "./mask.utils";
 
 @Directive({
     selector: '[au-mask]'
@@ -28,7 +28,11 @@ export class AuMaskDirective implements OnInit {
     @HostListener("keydown", ['$event', '$event.keyCode'])
     onKeyDown($event: KeyboardEvent, keyCode) {
 
-        $event.preventDefault();
+
+        if (keyCode !== TAB) {
+            $event.preventDefault();
+        }
+
 
     }
 
