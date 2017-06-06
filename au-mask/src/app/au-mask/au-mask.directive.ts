@@ -1,7 +1,10 @@
 import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import * as includes from 'lodash.includes';
-import {overWriteCharAtPosition, SPECIAL_CHARACTERS, TAB} from "./mask.utils";
+import {LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS, TAB} from "./mask.utils";
+
+import * as findLastIndex from 'lodash.findlastindex';
+
 
 @Directive({
     selector: '[au-mask]'
@@ -35,6 +38,29 @@ export class AuMaskDirective implements OnInit {
 
         const key = String.fromCharCode(keyCode),
                 cursorPos = this.input.selectionStart;
+
+        switch(keyCode) {
+
+            case LEFT_ARROW:
+
+                const valueBeforeCursor = this.input.value.slice(0, cursorPos);
+
+                const lastPlaceholderPos = findLastIndex(valueBeforeCursor,
+                                                char => char === "_" );
+
+                if (lastPlaceholderPos >= 0) {
+                    this.input.setSelectionRange(lastPlaceholderPos, lastPlaceholderPos);
+                }
+
+                return;
+
+
+            case RIGHT_ARROW:
+
+
+
+
+        }
 
         overWriteCharAtPosition(this.input, cursorPos, key);
 
