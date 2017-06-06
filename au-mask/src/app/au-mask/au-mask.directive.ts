@@ -4,7 +4,7 @@ import * as includes from 'lodash.includes';
 import {LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS, TAB} from "./mask.utils";
 
 import * as findLastIndex from 'lodash.findlastindex';
-
+import * as findIndex from 'lodash.findindex';
 
 @Directive({
     selector: '[au-mask]'
@@ -57,14 +57,31 @@ export class AuMaskDirective implements OnInit {
 
             case RIGHT_ARROW:
 
+                this.handleRightArrow(cursorPos);
 
+                return;
 
 
         }
 
         overWriteCharAtPosition(this.input, cursorPos, key);
 
+        this.handleRightArrow(cursorPos);
 
+
+
+    }
+
+
+    handleRightArrow(cursorPos:number) {
+        const valueAfterCursor = this.input.value.slice(cursorPos + 1);
+
+        const nextPlaceholderPos = cursorPos + 1 +
+            findIndex(valueAfterCursor, char => char === "_");
+
+        if (nextPlaceholderPos >= 0) {
+            this.input.setSelectionRange(nextPlaceholderPos, nextPlaceholderPos);
+        }
 
     }
 
