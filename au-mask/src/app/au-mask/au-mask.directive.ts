@@ -1,10 +1,16 @@
 import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 import * as includes from 'lodash.includes';
-import {LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS, TAB} from "./mask.utils";
+import {
+     LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS,
+    TAB
+} from "./mask.utils";
 
 import * as findLastIndex from 'lodash.findlastindex';
 import * as findIndex from 'lodash.findindex';
+import {maskDigitValidators} from "./digit_validators";
+
+
 
 @Directive({
     selector: '[au-mask]'
@@ -37,23 +43,15 @@ export class AuMaskDirective implements OnInit {
         }
 
         const key = String.fromCharCode(keyCode),
-                cursorPos = this.input.selectionStart;
+            cursorPos = this.input.selectionStart;
 
-        switch(keyCode) {
+        switch (keyCode) {
 
             case LEFT_ARROW:
+                this.handleLeftArrow(cursorPos);
 
-                const valueBeforeCursor = this.input.value.slice(0, cursorPos);
-
-                const lastPlaceholderPos = findLastIndex(valueBeforeCursor,
-                                                char => char === "_" );
-
-                if (lastPlaceholderPos >= 0) {
-                    this.input.setSelectionRange(lastPlaceholderPos, lastPlaceholderPos);
-                }
 
                 return;
-
 
             case RIGHT_ARROW:
 
@@ -61,29 +59,39 @@ export class AuMaskDirective implements OnInit {
 
                 return;
 
-
         }
 
         overWriteCharAtPosition(this.input, cursorPos, key);
-
         this.handleRightArrow(cursorPos);
 
 
-
     }
 
+    handleLeftArrow(cursorPos) {
+        const valueBeforeCursor = this.input.value.slice(0, cursorPos);
 
-    handleRightArrow(cursorPos:number) {
+        const previousPos = findLastIndex(valueBeforeCursor,
+            char => ! includes(SPECIAL_CHARACTERS, char) );
+
+        if (previousPos >= 0) {
+            this.input.setSelectionRange(previousPos, previousPos);
+        }
+    }
+
+    handleRightArrow(cursorPos) {
         const valueAfterCursor = this.input.value.slice(cursorPos + 1);
 
-        const nextPlaceholderPos = cursorPos + 1 +
-            findIndex(valueAfterCursor, char => char === "_");
+        const nextPos =
+            findIndex(valueAfterCursor, char => !includes(SPECIAL_CHARACTERS, char) );
 
-        if (nextPlaceholderPos >= 0) {
-            this.input.setSelectionRange(nextPlaceholderPos, nextPlaceholderPos);
+        if (nextPos >= 0) {
+
+            const newCursorPos = cursorPos + nextPos + 1;
+
+            this.input.setSelectionRange(newCursorPos, newCursorPos);
         }
-
     }
+
 
     buildPlaceHolder(): string {
 
@@ -94,7 +102,7 @@ export class AuMaskDirective implements OnInit {
             return result +=
                 includes(SPECIAL_CHARACTERS, char) ? char : '_'
 
-        } , '' );
+        }, '');
 
 
     }

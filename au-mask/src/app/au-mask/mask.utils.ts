@@ -1,5 +1,7 @@
 
-
+import * as findLastIndex from 'lodash.findlastindex';
+import * as findIndex from 'lodash.findlastindex';
+import * as includes from 'lodash.findlastindex';
 
 export const  TAB = 9,
     LEFT_ARROW =	37,
@@ -8,6 +10,7 @@ export const  TAB = 9,
     DELETE = 46;
 
 export const SPECIAL_CHARACTERS = [" ", "/", "(", ")", "+", "\/", "-"];
+
 
 
 export function overWriteCharAtPosition(input:HTMLInputElement,
@@ -19,6 +22,9 @@ export function overWriteCharAtPosition(input:HTMLInputElement,
         key + currentValue.slice( position + 1 );
 
 }
+
+
+
 
 
 
