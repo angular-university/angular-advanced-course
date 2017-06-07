@@ -2,7 +2,9 @@ import {Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core'
 
 import * as includes from 'lodash.includes';
 import {
-     LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS,
+    BACKSPACE,
+    DELETE,
+    LEFT_ARROW, overWriteCharAtPosition, RIGHT_ARROW, SPECIAL_CHARACTERS,
     TAB
 } from "./mask.utils";
 
@@ -59,6 +61,17 @@ export class AuMaskDirective implements OnInit {
 
                 return;
 
+            case DELETE:
+
+                this.handleDelete(cursorPos);
+
+                return;
+
+            case BACKSPACE:
+
+                this.handleBackspace(cursorPos);
+
+                return;
         }
 
         const maskDigit = this.mask.charAt(cursorPos),
@@ -70,6 +83,24 @@ export class AuMaskDirective implements OnInit {
 
             this.handleRightArrow(cursorPos);
 
+        }
+    }
+
+    handleDelete(cursorPos) {
+        overWriteCharAtPosition(this.input, cursorPos, '_');
+    }
+
+
+    handleBackspace(cursorPos) {
+
+        const valueBeforeCursor = this.input.value.slice(0, cursorPos);
+
+        const previousPos = findLastIndex(valueBeforeCursor,
+            char => ! includes(SPECIAL_CHARACTERS, char) );
+
+        if (previousPos >= 0) {
+            overWriteCharAtPosition(this.input, previousPos, '_');
+            this.input.setSelectionRange(previousPos, previousPos);
         }
     }
 
