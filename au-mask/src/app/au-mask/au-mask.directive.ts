@@ -59,6 +59,19 @@ export class AuMaskDirective implements OnInit {
                 this.handleRightArrow(cursorPos);
 
                 return;
+
+
+            case BACKSPACE:
+
+                    this.handleBackspace(cursorPos);
+
+                    return;
+
+            case DELETE:
+
+                this.handleDelete(cursorPos);
+
+                return;
         }
 
         const maskDigit = this.mask.charAt(cursorPos),
@@ -73,15 +86,37 @@ export class AuMaskDirective implements OnInit {
         }
     }
 
-    handleLeftArrow(cursorPos) {
-        const valueBeforeCursor = this.input.value.slice(0, cursorPos);
+    handleBackspace(cursorPos) {
 
-        const previousPos = findLastIndex(valueBeforeCursor,
-            char => ! includes(SPECIAL_CHARACTERS, char) );
+        const previousPos = this.calculatePreviousCursorPos(cursorPos);
+
+        if (previousPos >= 0) {
+            overWriteCharAtPosition(this.input, previousPos, '_');
+            this.input.setSelectionRange(previousPos, previousPos);
+        }
+    }
+
+    handleDelete(cursorPos) {
+        overWriteCharAtPosition(this.input, cursorPos, '_');
+        this.input.setSelectionRange(cursorPos, cursorPos);
+    }
+
+
+    handleLeftArrow(cursorPos) {
+
+        const previousPos = this.calculatePreviousCursorPos(cursorPos);
 
         if (previousPos >= 0) {
             this.input.setSelectionRange(previousPos, previousPos);
         }
+    }
+
+    calculatePreviousCursorPos(cursorPos) {
+        const valueBeforeCursor = this.input.value.slice(0, cursorPos);
+
+        return  findLastIndex(valueBeforeCursor,
+            char => ! includes(SPECIAL_CHARACTERS, char) );
+
     }
 
     handleRightArrow(cursorPos) {
