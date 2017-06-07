@@ -60,18 +60,6 @@ export class AuMaskDirective implements OnInit {
                 this.handleRightArrow(cursorPos);
 
                 return;
-
-            case DELETE:
-
-                this.handleDelete(cursorPos);
-
-                return;
-
-            case BACKSPACE:
-
-                this.handleBackspace(cursorPos);
-
-                return;
         }
 
         const maskDigit = this.mask.charAt(cursorPos),
@@ -83,24 +71,6 @@ export class AuMaskDirective implements OnInit {
 
             this.handleRightArrow(cursorPos);
 
-        }
-    }
-
-    handleDelete(cursorPos) {
-        overWriteCharAtPosition(this.input, cursorPos, '_');
-    }
-
-
-    handleBackspace(cursorPos) {
-
-        const valueBeforeCursor = this.input.value.slice(0, cursorPos);
-
-        const previousPos = findLastIndex(valueBeforeCursor,
-            char => ! includes(SPECIAL_CHARACTERS, char) );
-
-        if (previousPos >= 0) {
-            overWriteCharAtPosition(this.input, previousPos, '_');
-            this.input.setSelectionRange(previousPos, previousPos);
         }
     }
 
