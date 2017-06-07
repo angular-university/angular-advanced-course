@@ -24,6 +24,8 @@ export class AuMaskDirective implements OnInit {
 
     input: HTMLInputElement;
 
+    fullFieldSelected = false;
+
     constructor(el: ElementRef) {
 
         this.input = el.nativeElement;
@@ -36,9 +38,20 @@ export class AuMaskDirective implements OnInit {
 
     }
 
+    @HostListener('select', ['$event'])
+    onSelect($event:UIEvent) {
+
+        this.fullFieldSelected = this.input.selectionStart == 0 &&
+                    this.input.selectionEnd === this.input.value.length;
+
+    }
+
     @HostListener("keydown", ['$event', '$event.keyCode'])
     onKeyDown($event: KeyboardEvent, keyCode) {
 
+        if ($event.metaKey || $event.ctrlKey) {
+            return;
+        }
 
         if (keyCode !== TAB) {
             $event.preventDefault();
@@ -46,6 +59,18 @@ export class AuMaskDirective implements OnInit {
 
         const key = String.fromCharCode(keyCode),
             cursorPos = this.input.selectionStart;
+
+
+        if (this.fullFieldSelected) {
+
+            this.input.value = this.buildPlaceHolder();
+
+            const firstPlaceholderPos = findIndex(this.input.value,
+                char => char === '_');
+
+            this.input.setSelectionRange(firstPlaceholderPos, firstPlaceholderPos);
+
+        }
 
         switch (keyCode) {
 
