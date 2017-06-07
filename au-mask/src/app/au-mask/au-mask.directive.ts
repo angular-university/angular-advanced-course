@@ -52,7 +52,6 @@ export class AuMaskDirective implements OnInit {
             case LEFT_ARROW:
                 this.handleLeftArrow(cursorPos);
 
-
                 return;
 
             case RIGHT_ARROW:
