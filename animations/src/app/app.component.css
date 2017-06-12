@@ -12,7 +12,8 @@ label {
 
 }
 
-input {
+.form-input {
+    display: block;
     border-radius: 4px;
     height: 30px;
     line-height: 30px;
@@ -28,3 +29,52 @@ input {
 input::-ms-clear {
     display: none;
 }
+
+.form-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.modal-button {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: white;
+    background: #1976d2;
+    font-weight: bold;
+    outline: none;
+}
+
+.modal-buttons {
+    padding: 0 20px;
+}
+
+
+
+.modal-buttons button {
+    border-radius: 4px;
+    color: white;
+    background: #1976d2;
+    width: 100px;
+
+}
+
+.payment-form {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+

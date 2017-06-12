@@ -25,41 +25,56 @@
 
         <ng-template #modalButtons>
 
-            <button (click)="tabPanel.selectTab(loginTab)">Login</button>
-            <button (click)="tabPanel.selectTab(signupTab)">Sign Up</button>
+            <div class="modal-buttons">
+                <button (click)="tabPanel.selectTab(stripeTab)">Stripe</button>
+                <button (click)="tabPanel.selectTab(paypalTab)">Paypal</button>
+            </div>
 
         </ng-template>
 
 
-        <au-tab-panel #tabPanel [headerTemplate]="modalButtons">
+        <au-tab-panel #tabPanel>
 
-            <au-tab title="Stripe" #loginTab>
+            <au-tab title="Stripe" #stripeTab>
 
-                <au-fa-input icon="envelope">
-                    <input auInput type="email" placeholder="Email">
-                </au-fa-input>
+                <div class="payment-form">
 
-                <input placeholder="Name">
+                    <label>Email:</label>
+                    <au-fa-input class="form-input" icon="envelope">
+                        <input auInput type="email" placeholder="Email">
+                    </au-fa-input>
 
-                <au-fa-input icon="cc-stripe">
-                    <input auInput placeholder="Card Number" au-mask="9999 9999 9999 9999">
-                </au-fa-input>
+                    <label>Name:</label>
+                    <input class="form-input" placeholder="Name">
 
-                <input placeholder="Date" au-mask="19/9999">
+                    <label>Card Number:</label>
+                    <au-fa-input icon="cc-stripe" class="form-input">
+                        <input auInput placeholder="Card Number" au-mask="9999 9999 9999 9999">
+                    </au-fa-input>
 
-                <input placeholder="CVC" au-mask="999">
+                    <label>Card Date:</label>
+                    <input placeholder="Date" au-mask="19/9999" class="form-input">
 
-                <input placeholder="Coupon Code (optional)">
+                    <label>CVC:</label>
+                    <input placeholder="CVC" au-mask="999" class="form-input">
 
-                <button>Trigger Stripe Payment</button>
+                    <label>Coupon Code:</label>
+                    <input placeholder="Coupon Code (optional)" class="form-input">
+
+                    <button class="modal-button">Trigger Stripe Payment</button>
+
+                </div>
 
             </au-tab>
 
-            <au-tab title="Paypal" #signupTab>
+            <au-tab title="Paypal" #paypalTab>
 
-                <input placeholder="Coupon Code (optional)">
+                <div class="payment-form">
+                    <label>Coupon Code:</label>
+                    <input placeholder="Coupon Code (optional)" class="form-input">
 
-                <button>Trigger Paypal Payment</button>
+                    <button class="modal-button">Trigger Paypal Payment</button>
+                </div>
 
             </au-tab>
 
@@ -68,9 +83,7 @@
     </ng-template>
 
 
-
-    <au-modal *auModalOpenOnClick="paymentModal" [body]="modalBody">
-
+    <au-modal *auModalOpenOnClick="paymentModal" [body]="modalBody" [hideOnClickOutside]="false">
 
 
     </au-modal>
