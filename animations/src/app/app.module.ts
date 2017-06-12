@@ -8,7 +8,6 @@ import {AuInputModule} from "au-input";
 import {AuTabPanelModule} from 'au-tab-panel';
 import {AuMaskModule} from "au-mask";
 import {AuModalModule} from 'au-modal';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -16,7 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ],
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
         FormsModule,
         HttpModule,
         AuInputModule,
