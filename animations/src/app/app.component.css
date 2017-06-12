@@ -1,0 +1,30 @@
+
+
+.container {
+    margin: 0 auto;
+    max-width: 350px;
+    padding-top:65px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+
+}
+
+input {
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: "Courier", serif;
+    width:310px;
+    margin-bottom: 30px;
+    border: 2px solid darkgray;
+    padding: 5px 10px 5px 10px;
+}
+
+
+input::-ms-clear {
+    display: none;
+}
