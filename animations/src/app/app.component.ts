@@ -12,16 +12,6 @@ import {
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
     animations: [
-        trigger('tabActive', [
-            state('open', style({
-                opacity: 1
-            })),
-            state('closed', style({
-                opacity: 0
-            })),
-            transition('open => closed', animate('1000ms ease-in')),
-            transition('closed => open', animate('1000ms ease-out'))
-        ]),
         trigger('fadeInOut', [
             transition('void => *', [   // :enter is alias to 'void => *'
                 style({opacity:0}),
