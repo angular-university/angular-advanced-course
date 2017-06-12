@@ -1,4 +1,3 @@
-
 <header class="l-header">
     <ul class="top-menu disable-link-styles">
         <li class="logo-small-container">
@@ -22,8 +21,62 @@
         Animations
     </h1>
 
+    <ng-template #modalBody>
+
+        <ng-template #modalButtons>
+
+            <button (click)="tabPanel.selectTab(loginTab)">Login</button>
+            <button (click)="tabPanel.selectTab(signupTab)">Sign Up</button>
+
+        </ng-template>
 
 
+        <au-tab-panel #tabPanel [headerTemplate]="modalButtons">
+
+            <au-tab title="Stripe" #loginTab>
+
+                <au-fa-input icon="envelope">
+                    <input auInput type="email" placeholder="Email">
+                </au-fa-input>
+
+                <input placeholder="Name">
+
+                <au-fa-input icon="cc-stripe">
+                    <input auInput placeholder="Card Number" au-mask="9999 9999 9999 9999">
+                </au-fa-input>
+
+                <input placeholder="Date" au-mask="19/9999">
+
+                <input placeholder="CVC" au-mask="999">
+
+                <input placeholder="Coupon Code (optional)">
+
+                <button>Trigger Stripe Payment</button>
+
+            </au-tab>
+
+            <au-tab title="Paypal" #signupTab>
+
+                <input placeholder="Coupon Code (optional)">
+
+                <button>Trigger Paypal Payment</button>
+
+            </au-tab>
+
+        </au-tab-panel>
+
+    </ng-template>
+
+
+
+    <au-modal *auModalOpenOnClick="paymentModal" [body]="modalBody">
+
+
+
+    </au-modal>
+
+
+    <button #paymentModal>Open Payment Modal</button>
 
 </div>
 
