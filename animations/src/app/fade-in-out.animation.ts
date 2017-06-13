@@ -21,7 +21,7 @@ export const fadeOut = animation([
 
 
 export const fadeInOut = trigger('fadeInOut', [
-    transition('void => *', useAnimation(fadeIn)), // :enter is alias to 'void => *'
-    transition('* => void', useAnimation(fadeOut)) // :leave is alias to '* => void'
+    transition('void => *', useAnimation(fadeIn, {params: {delay:"2000ms"}})), // :enter is alias to 'void => *'
+    transition('* => void', useAnimation(fadeOut,  {params: {delay:"2000ms"}} )) // :leave is alias to '* => void'
 ]);
 
