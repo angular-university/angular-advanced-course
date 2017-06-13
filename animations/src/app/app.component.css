@@ -8,19 +8,19 @@
 
 label {
     display: block;
-    margin-top: 30px;
+    margin-top: 15px;
 
 }
 
 .form-input {
     display: block;
     border-radius: 4px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 17px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
     font-family: "Courier", serif;
     width:310px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: 2px solid darkgray;
     padding: 5px 10px 5px 10px;
 }

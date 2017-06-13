@@ -85,11 +85,7 @@
     </ng-template>
 
 
-    <au-modal [@fadeInOut]
-              (@fadeInOut.start)="onAnimationStart()"
-              (@fadeInOut.done)="onAnimationEnd()"
-              *auModalOpenOnClick="paymentModal"
-              [body]="modalBody">
+    <au-modal *auModalOpenOnClick="paymentModal" [body]="modalBody">
 
 
     </au-modal>
