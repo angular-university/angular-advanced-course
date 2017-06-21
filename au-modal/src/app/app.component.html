@@ -1,24 +1,24 @@
 <header class="l-header">
-  <ul class="top-menu disable-link-styles">
-    <li class="logo-small-container">
-      <a class="v-center-block-parent">
-        <img class="v-center-block logo-small angular-university-logo"
-             src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png"
-             data-pin-nopin="true">
+    <ul class="top-menu disable-link-styles">
+        <li class="logo-small-container">
+            <a class="v-center-block-parent">
+                <img class="v-center-block logo-small angular-university-logo"
+                     src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png"
+                     data-pin-nopin="true">
 
-      </a>
-    </li>
-    <li>
-      <a>Modal</a>
-    </li>
-  </ul>
+            </a>
+        </li>
+        <li>
+            <a>Modal</a>
+        </li>
+    </ul>
 
 </header>
 
 <body>
 <div class="container">
 
-  <h1>Modal Examples</h1>
+    <h1>Modal Examples</h1>
 
     <ng-template #authModalBody let-loginTabActive="loginTabActive">
 
@@ -77,15 +77,17 @@
     </au-modal>
 
 
+    <au-modal id="testModal" *auModalOpenOnClick="testButton"></au-modal>
 
+    <div class="modal-buttons">
 
-  <div class="modal-buttons">
+        <button #loginButton (click)="setLoginActive(true)">Login</button>
 
-    <button #loginButton (click)="setLoginActive(true)">Login</button>
+        <button #signUpButton (click)="setLoginActive(false)">Sign Up</button>
 
-    <button #signUpButton (click)="setLoginActive(false)">Sign Up</button>
+        <button id="testButton" #testButton>Test</button>
 
-  </div>
+    </div>
 
 </div>
 
