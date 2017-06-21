@@ -57,7 +57,7 @@ describe('AppComponent', () => {
             By.css('.tab-panel-buttons li.selected')).nativeElement;
 
         expect(selectedButton).toBeTruthy();
-        expect(selectedButton.textContent).toBe("Contact");
+        expect(selectedButton.textContent).toContain("Contact");
 
     }));
 
@@ -86,7 +86,7 @@ describe('AppComponent', () => {
             By.css('.tab-panel-buttons li.selected')).nativeElement;
 
         expect(selectedButton).toBeTruthy();
-        expect(selectedButton.textContent).toBe("Login");
+        expect(selectedButton.textContent).toContain("Login");
 
 
     }));

@@ -13,12 +13,12 @@
     </ng-template>
 
 
-    <au-tab-panel #tabPanel>
+    <au-tab-panel id="tab-panel" #tabPanel>
 
-        <au-tab title="Login" #loginTab>
+        <au-tab title="Login" #loginTab [selected]="false">
             <form>
                 <div class="form-field">
-                    <label>Email:</label><input>
+                    <label>Email:</label><input class="login-email">
                 </div>
                 <div class="form-field">
                     <label>Password:</label><input>
@@ -26,7 +26,7 @@
             </form>
         </au-tab>
 
-        <au-tab title="Sign Up" #signUpTab [selected]="true">
+        <au-tab title="Sign Up" #signUpTab [selected]="false">
             <form>
                 <div class="form-field">
                     <label>Email:</label><input>
@@ -40,10 +40,10 @@
             </form>
         </au-tab>
 
-        <au-tab title="Contact">
+        <au-tab title="Contact" [selected]="true">
             <form>
                 <div class="form-field">
-                    <label>Email:</label><input>
+                    <label>Email:</label><input class="contact-email">
                 </div>
                 <div class="form-field">
                     <label>Message:</label>
