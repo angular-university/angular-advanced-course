@@ -3,8 +3,9 @@ import {ComponentFixture} from '@angular/core/testing';
 import {DebugElement} from '@angular/core';
 import {By}              from '@angular/platform-browser';
 import {AppComponent} from './app.component';
-import {TabPanelComponent} from "./tab-panel/tab-panel.component";
-import {TabComponent} from "./tab/tab.component";
+import {AuTabPanelModule} from './au-tab-panel/au-tab-panel.module';
+
+
 
 
 describe('AppComponent', () => {
@@ -18,8 +19,9 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                AppComponent, TabPanelComponent, TabComponent
+                AppComponent
             ],
+            imports:[AuTabPanelModule]
         }).compileComponents();
     }));
 
