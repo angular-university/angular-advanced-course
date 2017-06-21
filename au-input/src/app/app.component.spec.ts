@@ -1,9 +1,8 @@
 import {TestBed, async, ComponentFixture} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {AuFaInputComponent} from "./lib/au-fa-input/au-fa-input.component";
-import {InputRefDirective} from "./lib/common/input-ref.directive";
 import {DebugElement} from '@angular/core';
 import {By}              from '@angular/platform-browser';
+import {AuInputModule} from "./lib/au-input.module";
 
 describe('AppComponent', () => {
 
@@ -16,8 +15,9 @@ describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                AppComponent, AuFaInputComponent, InputRefDirective
+                AppComponent
             ],
+            imports:[AuInputModule]
         }).compileComponents();
     }));
 
