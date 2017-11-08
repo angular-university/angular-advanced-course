@@ -16,5 +16,9 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "./node_modules/au-tab-panel/**/*.ts",
+    "./src/**/*.ts"
+  ]
 }
