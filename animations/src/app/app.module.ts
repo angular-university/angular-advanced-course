@@ -24,8 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         AuTabPanelModule,
         AuMaskModule,
         AuModalModule.forRoot()
-
-
     ],
     providers: [],
     bootstrap: [AppComponent]

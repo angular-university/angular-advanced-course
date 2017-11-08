@@ -16,5 +16,12 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./node_modules/au-input/**/*.ts",
+    "./node_modules/au-mask/**/*.ts",
+    "./node_modules/au-tab-panel/**/*.ts",
+    "./node_modules/au-modal/**/*.ts"
+  ]
 }
