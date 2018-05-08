@@ -18,6 +18,7 @@
     ]
   },
   "include": [
+    "./node_modules/au-input/**/*.ts",
     "./node_modules/au-tab-panel/**/*.ts",
     "./src/**/*.ts"
   ]
