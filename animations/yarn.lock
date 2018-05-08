@@ -542,9 +542,9 @@ au-input@^2.0.0:
     rxjs-compat "^6.0.0-rc.0"
     zone.js "0.8.26"
 
-au-mask@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/au-mask/-/au-mask-1.0.0.tgz#3886c3cb3bead9d9a2bfcd292f3002a0824c2b24"
+au-mask@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/au-mask/-/au-mask-1.0.1.tgz#7fbc1b0d669cd2fd90d46376611852964160b64e"
   dependencies:
     "@angular/animations" "6.0.0"
     "@angular/common" "6.0.0"
@@ -563,9 +563,9 @@ au-mask@^1.0.0:
     rxjs-compat "^6.0.0-rc.0"
     zone.js "0.8.26"
 
-au-modal@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/au-modal/-/au-modal-1.0.0.tgz#68cbc26247cfdac8b4bdc3f0f48019857a23b5fc"
+au-modal@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/au-modal/-/au-modal-1.0.1.tgz#2d65fffcab276bb5b0e2946bb850c633cee15223"
   dependencies:
     "@angular/animations" "6.0.0"
     "@angular/common" "6.0.0"
