@@ -1,25 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
-import { AppComponent } from './app.component';
-import { TabPanelComponent } from './tab-panel/tab-panel.component';
-import { TabComponent } from './tab/tab.component';
+
+import {AppComponent} from './app.component';
+import {AuTabPanelModule} from "./au-tab-panel/au-tab-panel.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TabPanelComponent,
-    TabComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  entryComponents: [TabComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        AuTabPanelModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    entryComponents: []
 })
-export class AppModule { }
+export class AppModule {
+}

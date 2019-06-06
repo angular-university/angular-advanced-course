@@ -5,6 +5,7 @@ $secondary: rgba(0, 0, 0, 0.117647);
 
 .modal-body {
   position: absolute;
+  display: inline-block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -28,5 +29,17 @@ $secondary: rgba(0, 0, 0, 0.117647);
   z-index: 10;
 }
 
+:host .close-icon {
+  width: 100%;
+  height: 20px;
+}
 
+:host .close-icon::ng-deep i  {
+  cursor: pointer;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  height: 15px;
+
+}
 
