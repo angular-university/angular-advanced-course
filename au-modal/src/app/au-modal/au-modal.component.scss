@@ -34,7 +34,7 @@ $secondary: rgba(0, 0, 0, 0.117647);
   height: 20px;
 }
 
-:host .close-icon /deep/ i  {
+:host .close-icon::ng-deep i  {
   cursor: pointer;
   position: fixed;
   right: 5px;
