@@ -11,7 +11,7 @@ export class AuFaInputComponent implements AfterContentInit {
     @Input()
     icon: string;
 
-    @ContentChild(InputRefDirective)
+    @ContentChild(InputRefDirective,{static:false})
     input: InputRefDirective;
 
     ngAfterContentInit() {
