@@ -3,8 +3,6 @@
 
 This repository contains the code of the [Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-university.io/course/angular-advanced-course).
 
-This course repository is updated to Angular v8, there is a Yarn lock file available.
-
 ![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
 
 
